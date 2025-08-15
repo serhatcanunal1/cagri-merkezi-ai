@@ -1,0 +1,321 @@
+{
+  "gorusmeler": [
+    {
+      "id": "08ff40c8-92e6-4417-b11e-9cc6c85f3e34",
+      "telefon": "05375944025",
+      "musteri_adi": "Elif Zeynep TOSUN",
+      "baslangic_zamani": "2025-08-15T01:14:18.485545",
+      "bitis_zamani": null,
+      "sure": 0,
+      "durum": "aktif",
+      "kategori": null,
+      "mesajlar": [
+        {
+          "zaman": "2025-08-15T01:14:18.760069",
+          "gonderen": "Temsilci",
+          "mesaj": "Size nasıl yardımcı olabilirim?",
+          "kategori": null
+        }
+      ],
+      "kategori_gecmisi": [],
+      "cozulme_durumu": "devam_ediyor",
+      "oncelik": "normal",
+      "etiketler": [],
+      "notlar": ""
+    },
+    {
+      "id": "d64f95f7-0744-4ee3-bb29-952c242bdebf",
+      "telefon": "05375944025",
+      "musteri_adi": "Elif Zeynep TOSUN",
+      "baslangic_zamani": "2025-08-15T02:03:09.998841",
+      "bitis_zamani": "2025-08-15T02:04:00.260555",
+      "sure": 0.84,
+      "durum": "tamamlandi",
+      "kategori": "Fatura İtirazı",
+      "mesajlar": [
+        {
+          "zaman": "2025-08-15T02:03:10.211568",
+          "gonderen": "Temsilci",
+          "mesaj": "Size nasıl yardımcı olabilirim?",
+          "kategori": null
+        },
+        {
+          "zaman": "2025-08-15T02:03:19.729543",
+          "gonderen": "Müşteri",
+          "mesaj": "tırtıl itiraz etmek istiyorum",
+          "kategori": null
+        },
+        {
+          "zaman": "2025-08-15T02:03:20.191964",
+          "gonderen": "Sistem",
+          "mesaj": "Kategori: Fatura İtirazı",
+          "kategori": "Fatura İtirazı"
+        },
+        {
+          "zaman": "2025-08-15T02:03:20.199181",
+          "gonderen": "Temsilci",
+          "mesaj": "Fatura analiz sonucu:\n2025-07 ayında çift fatura kesimi tespit edildi. Ödenen tutar (299.80 TL) ödenecek tutarın (149.9 TL) 2 katıdır. Aynı dönemde iki kez faturalandırma yapılmış.",
+          "kategori": "Fatura İtirazı"
+        },
+        {
+          "zaman": "2025-08-15T02:03:49.181737",
+          "gonderen": "Temsilci",
+          "mesaj": "Farklı bir konuda destek ister misiniz?",
+          "kategori": "Fatura İtirazı"
+        },
+        {
+          "zaman": "2025-08-15T02:04:00.259021",
+          "gonderen": "Müşteri",
+          "mesaj": "Hayır",
+          "kategori": "Fatura İtirazı"
+        },
+        {
+          "zaman": "2025-08-15T02:04:00.272597",
+          "gonderen": "Temsilci",
+          "mesaj": "Görüşme sonlandırılıyor. Teşekkür eder İyi günler dileriz.",
+          "kategori": "Fatura İtirazı"
+        }
+      ],
+      "kategori_gecmisi": [
+        "Fatura İtirazı"
+      ],
+      "cozulme_durumu": "cozuldu",
+      "oncelik": "normal",
+      "etiketler": [],
+      "notlar": ""
+    },
+    {
+      "id": "c77ce794-2a6b-488e-8b18-bb81da56520a",
+      "telefon": "05375944025",
+      "musteri_adi": "Elif Zeynep TOSUN",
+      "baslangic_zamani": "2025-08-15T02:08:22.051628",
+      "bitis_zamani": "2025-08-15T02:08:58.322917",
+      "sure": 0.6,
+      "durum": "tamamlandi",
+      "kategori": "Sim Kart Şifre",
+      "mesajlar": [
+        {
+          "zaman": "2025-08-15T02:08:22.310362",
+          "gonderen": "Temsilci",
+          "mesaj": "Size nasıl yardımcı olabilirim?",
+          "kategori": null
+        },
+        {
+          "zaman": "2025-08-15T02:08:31.991660",
+          "gonderen": "Müşteri",
+          "mesaj": "tarifi değişikliği yapmak istiyorum",
+          "kategori": null
+        },
+        {
+          "zaman": "2025-08-15T02:08:32.086055",
+          "gonderen": "Sistem",
+          "mesaj": "Kategori: Sim Kart Şifre",
+          "kategori": "Sim Kart Şifre"
+        },
+        {
+          "zaman": "2025-08-15T02:08:32.099591",
+          "gonderen": "Temsilci",
+          "mesaj": "Lütfen TC kimlik numaranızın son iki hanesini söyleyin.",
+          "kategori": "Sim Kart Şifre"
+        },
+        {
+          "zaman": "2025-08-15T02:08:43.146723",
+          "gonderen": "Müşteri",
+          "mesaj": "46",
+          "kategori": "Sim Kart Şifre"
+        },
+        {
+          "zaman": "2025-08-15T02:08:43.155672",
+          "gonderen": "Temsilci",
+          "mesaj": "Sim kart şifreniz: 1234",
+          "kategori": "Sim Kart Şifre"
+        },
+        {
+          "zaman": "2025-08-15T02:08:49.107949",
+          "gonderen": "Temsilci",
+          "mesaj": "Farklı bir konuda destek ister misiniz?",
+          "kategori": "Sim Kart Şifre"
+        },
+        {
+          "zaman": "2025-08-15T02:08:58.321345",
+          "gonderen": "Müşteri",
+          "mesaj": "Hayır",
+          "kategori": "Sim Kart Şifre"
+        },
+        {
+          "zaman": "2025-08-15T02:08:58.336244",
+          "gonderen": "Temsilci",
+          "mesaj": "Görüşme sonlandırılıyor. Teşekkür eder İyi günler dileriz.",
+          "kategori": "Sim Kart Şifre"
+        }
+      ],
+      "kategori_gecmisi": [
+        "Sim Kart Şifre"
+      ],
+      "cozulme_durumu": "cozuldu",
+      "oncelik": "normal",
+      "etiketler": [],
+      "notlar": ""
+    },
+    {
+      "id": "1b1247dd-b373-4b15-a1a7-ca702cc304db",
+      "telefon": "05375944025",
+      "musteri_adi": "Elif Zeynep TOSUN",
+      "baslangic_zamani": "2025-08-15T02:12:45.443483",
+      "bitis_zamani": "2025-08-15T02:13:53.105783",
+      "sure": 1.13,
+      "durum": "tamamlandi",
+      "kategori": "Paket Kalan Hak Sorgulama",
+      "mesajlar": [
+        {
+          "zaman": "2025-08-15T02:12:45.702818",
+          "gonderen": "Temsilci",
+          "mesaj": "Size nasıl yardımcı olabilirim?",
+          "kategori": null
+        },
+        {
+          "zaman": "2025-08-15T02:12:55.475669",
+          "gonderen": "Müşteri",
+          "mesaj": "kalan tarife bilgilerimi görmek istiyorum",
+          "kategori": null
+        },
+        {
+          "zaman": "2025-08-15T02:12:55.567535",
+          "gonderen": "Sistem",
+          "mesaj": "Kategori: Paket Kalan Hak Sorgulama",
+          "kategori": "Paket Kalan Hak Sorgulama"
+        },
+        {
+          "zaman": "2025-08-15T02:12:55.581013",
+          "gonderen": "Temsilci",
+          "mesaj": "Paket konusundaki talebiniz anlaşılamadı. Lütfen ne yapmak istediğinizi belirtir misiniz? Paket değiştirmek mi, kalan haklarınızı öğrenmek mi?",
+          "kategori": "Paket Kalan Hak Sorgulama"
+        },
+        {
+          "zaman": "2025-08-15T02:13:11.070032",
+          "gonderen": "Temsilci",
+          "mesaj": "Size nasıl yardımcı olabilirim?",
+          "kategori": "Paket Kalan Hak Sorgulama"
+        },
+        {
+          "zaman": "2025-08-15T02:13:20.397080",
+          "gonderen": "Müşteri",
+          "mesaj": "kalan haklarımı öğrenmek istiyorum",
+          "kategori": "Paket Kalan Hak Sorgulama"
+        },
+        {
+          "zaman": "2025-08-15T02:13:20.452141",
+          "gonderen": "Sistem",
+          "mesaj": "Kategori: Paket Kalan Hak Sorgulama",
+          "kategori": "Paket Kalan Hak Sorgulama"
+        },
+        {
+          "zaman": "2025-08-15T02:13:20.462507",
+          "gonderen": "Temsilci",
+          "mesaj": "Aktif kampanya: Sınırsız 40GB kampanyası, Süre belirtilmemiş tarihine kadar geçerlidir.\nKalan kullanım haklarınız: 10 dakika, 0 SMS, 0 GB internet hakkınız kaldı.",
+          "kategori": "Paket Kalan Hak Sorgulama"
+        },
+        {
+          "zaman": "2025-08-15T02:13:43.304197",
+          "gonderen": "Temsilci",
+          "mesaj": "Farklı bir konuda destek ister misiniz?",
+          "kategori": "Paket Kalan Hak Sorgulama"
+        },
+        {
+          "zaman": "2025-08-15T02:13:53.103967",
+          "gonderen": "Müşteri",
+          "mesaj": "Hayır",
+          "kategori": "Paket Kalan Hak Sorgulama"
+        },
+        {
+          "zaman": "2025-08-15T02:13:53.119185",
+          "gonderen": "Temsilci",
+          "mesaj": "Görüşme sonlandırılıyor. Teşekkür eder İyi günler dileriz.",
+          "kategori": "Paket Kalan Hak Sorgulama"
+        }
+      ],
+      "kategori_gecmisi": [
+        "Paket Kalan Hak Sorgulama"
+      ],
+      "cozulme_durumu": "cozuldu",
+      "oncelik": "normal",
+      "etiketler": [],
+      "notlar": ""
+    },
+    {
+      "id": "87768194-d2a0-4a98-a301-297fbe8930f5",
+      "telefon": "05375944025",
+      "musteri_adi": "Elif Zeynep TOSUN",
+      "baslangic_zamani": "2025-08-15T03:08:48.970391",
+      "bitis_zamani": null,
+      "sure": 0,
+      "durum": "aktif",
+      "kategori": "Fatura İtirazı",
+      "mesajlar": [
+        {
+          "zaman": "2025-08-15T03:08:49.231480",
+          "gonderen": "Temsilci",
+          "mesaj": "Size nasıl yardımcı olabilirim?",
+          "kategori": null
+        },
+        {
+          "zaman": "2025-08-15T03:08:57.791772",
+          "gonderen": "Müşteri",
+          "mesaj": "faturam normal tutardan daha",
+          "kategori": null
+        },
+        {
+          "zaman": "2025-08-15T03:08:57.884142",
+          "gonderen": "Sistem",
+          "mesaj": "Kategori: Fatura İtirazı",
+          "kategori": "Fatura İtirazı"
+        },
+        {
+          "zaman": "2025-08-15T03:08:57.893756",
+          "gonderen": "Temsilci",
+          "mesaj": "Fatura analiz sonucu:\n2025-07 ayında çift fatura kesimi tespit edildi. Ödenen tutar (299.80 TL) ödenecek tutarın (149.9 TL) 2 katıdır. Aynı dönemde iki kez faturalandırma yapılmış.",
+          "kategori": "Fatura İtirazı"
+        }
+      ],
+      "kategori_gecmisi": [
+        "Fatura İtirazı"
+      ],
+      "cozulme_durumu": "devam_ediyor",
+      "oncelik": "normal",
+      "etiketler": [],
+      "notlar": ""
+    }
+  ],
+  "musteri_gecmis": {
+    "05375944025": {
+      "musteri_adi": "Elif Zeynep TOSUN",
+      "ilk_gorusme": "2025-08-15T01:14:18.485545",
+      "son_gorusme": "2025-08-15T03:08:48.970391",
+      "toplam_gorusme": 5,
+      "toplam_sure": 2.5699217166666664,
+      "kategoriler": {
+        "Fatura İtirazı": 1,
+        "Sim Kart Şifre": 1,
+        "Paket Kalan Hak Sorgulama": 1
+      },
+      "sorun_gecmisi": []
+    }
+  },
+  "kategori_istatistikleri": {
+    "kategori_sayilari": {
+      "null": 2,
+      "Fatura İtirazı": 1,
+      "Sim Kart Şifre": 1,
+      "Paket Kalan Hak Sorgulama": 1
+    },
+    "kategori_sureleri": {
+      "null": 0,
+      "Fatura İtirazı": 0.84,
+      "Sim Kart Şifre": 0.6,
+      "Paket Kalan Hak Sorgulama": 1.13
+    },
+    "toplam_gorusme": 5,
+    "aktif_gorusme": 2,
+    "tamamlanan_gorusme": 3
+  }
+}

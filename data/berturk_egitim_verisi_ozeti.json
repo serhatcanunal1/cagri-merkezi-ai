@@ -1,0 +1,33 @@
+{
+  "total_samples": 10664,
+  "categories": 7,
+  "labels": 7,
+  "category_distribution": {
+    "fatura itirazı": 1900,
+    "paket kalan sorgulama": 1850,
+    "borç sorgulama": 1800,
+    "iptal talebi": 1750,
+    "yeni paket/kampanya talebi": 1700,
+    "teknik arıza": 850,
+    "sim card/şifre işlemleri": 814
+  },
+  "label_distribution": {
+    "0": 1900,
+    "1": 1850,
+    "2": 1800,
+    "3": 1750,
+    "4": 1700,
+    "5": 850,
+    "6": 814
+  },
+  "columns": [
+    "Category",
+    "Content",
+    "Label"
+  ],
+  "data_types": {
+    "Category": "object",
+    "Content": "object",
+    "Label": "int64"
+  }
+}

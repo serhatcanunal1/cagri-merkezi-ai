@@ -1,0 +1,340 @@
+[
+  {
+    "tc": "10000000146",
+    "ad": "Elif Zeynep TOSUN",
+    "numara": "+905375944025",
+    "sim_sifre": "1234",
+    "son_fatura_odeme_tarihi": "2025-07-28",
+    "fatura_odendi_mi": true,
+    "son_4_aylik_kullanim": [
+      {
+        "ay": "2025-04",
+        "konusma_dakika": 300,
+        "sms": 40,
+        "data_mb": 3800,
+        "odeme_tl": 149.90
+      },
+      {
+        "ay": "2025-05",
+        "konusma_dakika": 280,
+        "sms": 45,
+        "data_mb": 3900,
+        "odeme_tl": 149.90
+      },
+      {
+        "ay": "2025-06",
+        "konusma_dakika": 290,
+        "sms": 48,
+        "data_mb": 3950,
+        "odeme_tl": 149.90
+      },
+      {
+        "ay": "2025-07",
+        "konusma_dakika": 290,
+        "sms": 50,
+        "data_mb": 4000,
+        "odeme_tl": 299.80
+      }
+    ],
+    "numaraya_tanimli_paket": {
+      "paketİsmi": "Sınırsız 40GB",
+      "fiyatı": 149.90,
+      "dakika": 300,
+      "sms": 50,
+      "data_gb": 40000,
+      "yenilenmeTarihi": "2025-08-01"
+    },
+    "gecis_yapilabilecek_paketler": [
+      {
+        "paketİsmi": "Sınırsız 60GB",
+        "fiyatı": 199.90,
+        "artiları": [
+          "daha fazla data",
+          "uluslararası dakika paketleri mevcut"
+        ]
+      },
+      {
+        "paketİsmi": "Esnek 20GB",
+        "fiyatı": 99.90,
+        "artiları": [
+          "daha ucuz aylık ücret"
+        ]
+      }
+    ],
+    "aktif_kampanya": {
+      "isim": "Hoşgeldin %20 İndirim (3 ay)",
+      "indirimYüzdesi": 20,
+      "gecerlilikTarihi": "2025-10-31"
+    },
+    "kalan_kullanim_haklari": {
+      "kalanDakika": 10,
+      "kalanSms": 0,
+      "kalanİnternet": 0
+    }
+  },
+  {
+    "tc": "10000000224",
+    "ad": "Muhsin TOSUN",
+    "numara": "+905332533023",
+    "sim_sifre": "1234",
+    "son_fatura_odeme_tarihi": "2025-08-05",
+    "fatura_odendi_mi": false,
+    "son_4_aylik_kullanim": [
+      {
+        "ay": "2025-04",
+        "konusma_dakika": 120,
+        "sms": 10,
+        "data_mb": 1500,
+        "odeme_tl": 59.90
+      },
+      {
+        "ay": "2025-05",
+        "konusma_dakika": 140,
+        "sms": 12,
+        "data_mb": 1800,
+        "odeme_tl": 59.90
+      },
+      {
+        "ay": "2025-06",
+        "konusma_dakika": 110,
+        "sms": 8,
+        "data_mb": 900,
+        "odeme_tl": 59.90
+      },
+      {
+        "ay": "2025-07",
+        "konusma_dakika": 320,
+        "sms": 60,
+        "data_mb": 15500,
+        "odeme_tl": 109.90
+      }
+    ],
+    "numaraya_tanimli_paket": {
+      "paketİsmi": "Esnek 10GB",
+      "fiyatı": 59.90,
+      "dakika": 300,
+      "sms": 200,
+      "data_gb": 10000,
+      "yenilenmeTarihi": "2025-08-10"
+    },
+    "aktif_kampanya": {
+      "paketİsmi": "Fatura Erteleme 1 Ay",
+      "indirimYüzdesi": 0,
+      "gecerlilikTarihi": "2025-08-31"
+    },
+    "gecis_yapilabilecek_paketler": [
+      {
+        "paketİsmi": "Esnek 20GB",
+        "fiyatı": 99.90
+      },
+      {
+        "paketİsmi": "Sınırsız 40GB",
+        "fiyatı": 149.90
+      }
+    ],
+    "kalan_kullanim_haklari": {
+      "kalanDakika": 20,
+      "kalanSms": 140,
+      "kalanİnternet": 0
+    }
+  },
+  {
+    "tc": "10000000308",
+    "ad": "Meryem GENÇALİ",
+    "numara": "+905389707969",
+    "sim_sifre": "1234",
+    "son_fatura_odeme_tarihi": "2025-07-15",
+    "fatura_odendi_mi": true,
+    "son_4_aylik_kullanim": [
+      {
+        "ay": "2025-04",
+        "konusma_dakika": 50,
+        "sms": 5,
+        "data_mb": 800,
+        "odeme_tl": 29.90
+      },
+      {
+        "ay": "2025-05",
+        "konusma_dakika": 40,
+        "sms": 2,
+        "data_mb": 600,
+        "odeme_tl": 29.90
+      },
+      {
+        "ay": "2025-06",
+        "konusma_dakika": 60,
+        "sms": 6,
+        "data_mb": 1200,
+        "odeme_tl": 29.90
+      },
+      {
+        "ay": "2025-07",
+        "konusma_dakika": 650,
+        "sms": 500,
+        "data_mb": 8000,
+        "odeme_tl": 199.90
+      }
+    ],
+    "numaraya_tanimli_paket": {
+      "paketİsmi": "Mini 3GB",
+      "fiyatı": 29.90,
+      "dakika": 100,
+      "sms": 50,
+      "data_gb": 3000,
+      "yenilenmeTarihi": "2025-08-01"
+    },
+    "aktif_kampanya": {
+      "paketİsmi": "Öğrenci Paketi %10",
+      "indirimYüzdesi": 10,
+      "gecerlilikTarihi": "2026-01-01"
+    },
+    "gecis_yapilabilecek_paketler": [
+      {
+        "paketİsmi": "Esnek 10GB",
+        "fiyatı": 59.90
+      },
+      {
+        "paketİsmi": "Mini 5GB",
+        "fiyatı": 39.90
+      }
+    ],
+    "kalan_kullanim_haklari": {
+      "kalanDakika": 0,
+      "kalanSms": 0,
+      "kalanİnternet": 0
+    }
+  },
+  {
+    "tc": "10000000462",
+    "ad": "Serhatcan ÜNAL",
+    "numara": "+905343541352",
+    "sim_sifre": "1234",
+    "son_fatura_odeme_tarihi": "2025-07-30",
+    "fatura_odendi_mi": true,
+    "son_4_aylik_kullanim": [
+      {
+        "ay": "2025-04",
+        "konusma_dakika": 600,
+        "sms": 120,
+        "data_mb": 12000,
+        "odeme_tl": 249.90
+      },
+      {
+        "ay": "2025-05",
+        "konusma_dakika": 580,
+        "sms": 100,
+        "data_mb": 15000,
+        "odeme_tl": 249.90
+      },
+      {
+        "ay": "2025-06",
+        "konusma_dakika": 620,
+        "sms": 130,
+        "data_mb": 16000,
+        "odeme_tl": 249.90
+      },
+      {
+        "ay": "2025-07",
+        "konusma_dakika": 600,
+        "sms": 150,
+        "data_mb": 10000,
+        "yurt_dişi_dakika": 100,
+        "odeme_tl": 499.80
+      }
+    ],
+    "numaraya_tanimli_paket": {
+      "paketİsmi": "Aile Paketi 120GB",
+      "fiyatı": 249.90,
+      "dakika": 650,
+      "sms": 150,
+      "data_gb": 12000,
+      "yenilenmeTarihi": "2025-08-05"
+    },
+    "aktif_kampanya": {
+      "paketİsmi": "Aileye Ek 20GB",
+      "indirimYüzdesi": 0,
+      "gecerlilikTarihi": "2025-12-31"
+    },
+    "gecis_yapilabilecek_paketler": [
+      {
+        "paketİsmi": "Aile Paketi 200GB",
+        "fiyatı": 329.90
+      },
+      {
+        "paketİsmi": "Sınırsız 60GB",
+        "fiyatı": 199.90
+      }
+    ],
+    "kalan_kullanim_haklari": {
+      "kalanDakika": 50,
+      "kalanSms": 0,
+      "kalanİnternet": 2000
+    }
+  },
+  {
+    "tc": "10000000531",
+    "ad": "Ali Buğrahan BUDAK",
+    "numara": "+905356597992",
+    "sim_sifre": "1234",
+    "son_fatura_odeme_tarihi": "2025-06-20",
+    "fatura_odendi_mi": false,
+    "son_4_aylik_kullanim": [
+      {
+        "ay": "2025-04",
+        "konusma_dakika": 50,
+        "sms": 2,
+        "data_mb": 4800,
+        "odeme_tl": 49.90
+      },
+      {
+        "ay": "2025-05",
+        "konusma_dakika": 40,
+        "sms": 1,
+        "data_mb": 5000,
+        "odeme_tl": 49.90
+      },
+      {
+        "ay": "2025-06",
+        "konusma_dakika": 60,
+        "sms": 3,
+        "data_mb": 4500,
+        "odeme_tl": 49.90
+      },
+      {
+        "ay": "2025-07",
+        "konusma_dakika": 55,
+        "sms": 2,
+        "data_mb": 4700,
+        "odeme_tl": 49.90
+      }
+    ],
+    "numaraya_tanimli_paket": {
+      "paketİsmi": "Data Only 5GB",
+      "fiyatı": 49.90,
+      "dakika": 160,
+      "sms": 100,
+      "data_gb": 5000,
+      "yenilenmeTarihi": "2025-07-01"
+    },
+    "aktif_kampanya": {
+      "paketİsmi": "Geri Ödeme Hatırlatma",
+      "indirimYüzdesi": 0,
+      "gecerlilikTarihi": "2025-09-01"
+    },
+    "gecis_yapilabilecek_paketler": [
+      {
+        "paketİsmi": "Esnek 10GB",
+        "fiyatı": 59.90
+      },
+      {
+        "paketİsmi": "Data Only 10GB",
+        "fiyatı": 79.90
+      }
+    ],
+    "kalan_kullanim_haklari": {
+      "kalanDakika": 105,
+      "kalanSms": 88,
+      "kalanİnternet": 3
+    }
+  }
+]

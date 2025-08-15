@@ -1,0 +1,3299 @@
+{
+  "test_summary": {
+    "total_tests": 100,
+    "successful_tests": 97,
+    "failed_tests": 3,
+    "success_rate": 0.97,
+    "total_duration": 0.010030746459960938,
+    "avg_test_duration": 2.0194053649902345e-06,
+    "avg_satisfaction": 4.08
+  },
+  "scenario_analysis": {
+    "billing_inquiry": {
+      "total": 30,
+      "successful": 30,
+      "avg_duration": 1.915295918782552e-06,
+      "avg_satisfaction": 4.066666666666666
+    },
+    "package_change": {
+      "total": 40,
+      "successful": 37,
+      "avg_duration": 1.5377998352050782e-06,
+      "avg_satisfaction": 4.075
+    },
+    "context_switch": {
+      "total": 10,
+      "successful": 10,
+      "avg_duration": 3.2901763916015627e-06,
+      "avg_satisfaction": 4.1
+    },
+    "technical_support": {
+      "total": 20,
+      "successful": 20,
+      "avg_duration": 2.5033950805664062e-06,
+      "avg_satisfaction": 4.1
+    }
+  },
+  "difficulty_analysis": {
+    "easy": 24,
+    "medium": 26,
+    "hard": 25,
+    "expert": 25
+  },
+  "detailed_results": [
+    {
+      "test_id": 0,
+      "scenario": {
+        "type": "billing_inquiry",
+        "difficulty": "medium",
+        "customer_state": "overdue"
+      },
+      "customer_data": {
+        "phone_number": "53571274359",
+        "name": "Mehmet",
+        "surname": "Yılmaz",
+        "tc_last_digits": "50",
+        "sim_pin": "6752",
+        "payment_status": "Gecikmis",
+        "balance": -24.014046308527654,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura durumumu kontrol etmek istiyorum",
+        "Borç var mı?",
+        "Ne kadar borç var?",
+        "Nasıl ödeyebilirim?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 3.5762786865234375e-06,
+      "tool_calls": 2,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_000_billing_inquiry"
+    },
+    {
+      "test_id": 1,
+      "scenario": {
+        "type": "billing_inquiry",
+        "difficulty": "medium",
+        "customer_state": "overdue"
+      },
+      "customer_data": {
+        "phone_number": "53832554640",
+        "name": "Ali",
+        "surname": "Kaya",
+        "tc_last_digits": "12",
+        "sim_pin": "8005",
+        "payment_status": "Gecikmis",
+        "balance": -97.46145398463213,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura durumumu kontrol etmek istiyorum",
+        "Borç var mı?",
+        "Ne kadar borç var?",
+        "Nasıl ödeyebilirim?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 2.1457672119140625e-06,
+      "tool_calls": 2,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 4,
+      "call_id": "test_001_billing_inquiry"
+    },
+    {
+      "test_id": 2,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "medium",
+        "customer_state": "delayed_payment"
+      },
+      "customer_data": {
+        "phone_number": "53772753350",
+        "name": "Ayşe",
+        "surname": "Şahin",
+        "tc_last_digits": "80",
+        "sim_pin": "6434",
+        "payment_status": "Gecikmis",
+        "balance": -35.11700425902541,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Paket değişikliği yapmak istiyorum",
+        "Fiyatları görebilir miyim?",
+        "Bu paket çok pahalı, daha ucuzu yok mu?",
+        "Tamam, Ekonomik Paket'i alayım",
+        "Hayır, teşekkürler"
+      ],
+      "success": true,
+      "duration": 2.384185791015625e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_002_package_change"
+    },
+    {
+      "test_id": 3,
+      "scenario": {
+        "type": "billing_inquiry",
+        "difficulty": "easy",
+        "customer_state": "paid"
+      },
+      "customer_data": {
+        "phone_number": "53913829485",
+        "name": "Ali",
+        "surname": "Kaya",
+        "tc_last_digits": "64",
+        "sim_pin": "2604",
+        "payment_status": "Odendi",
+        "balance": 14.511365953277434,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura bilgilerimi öğrenmek istiyorum",
+        "Son faturam ne kadar?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.430511474609375e-06,
+      "tool_calls": 2,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_003_billing_inquiry"
+    },
+    {
+      "test_id": 4,
+      "scenario": {
+        "type": "context_switch",
+        "difficulty": "medium",
+        "switch_type": "package_to_billing"
+      },
+      "customer_data": {
+        "phone_number": "53019345823",
+        "name": "Fatma",
+        "surname": "Şahin",
+        "tc_last_digits": "41",
+        "sim_pin": "1296",
+        "payment_status": "Odendi",
+        "balance": 6.723379750265368,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Paket değişikliği yapmak istiyorum",
+        "Önce fatura durumumu öğrenmek istiyorum",
+        "Borç var mı?",
+        "Şimdi paket değişikliği yapabilir miyim?",
+        "Hangi paketler var?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 3.814697265625e-06,
+      "tool_calls": 3,
+      "context_switches": 1,
+      "error_count": 0,
+      "satisfaction": 4,
+      "call_id": "test_004_context_switch"
+    },
+    {
+      "test_id": 5,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "medium",
+        "customer_state": "delayed_payment"
+      },
+      "customer_data": {
+        "phone_number": "53768992897",
+        "name": "Ahmet",
+        "surname": "Çelik",
+        "tc_last_digits": "94",
+        "sim_pin": "7992",
+        "payment_status": "Gecikmis",
+        "balance": -82.36163688533307,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Paket değişikliği yapmak istiyorum",
+        "Fiyatları görebilir miyim?",
+        "Bu paket çok pahalı, daha ucuzu yok mu?",
+        "Tamam, Ekonomik Paket'i alayım",
+        "Hayır, teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.1920928955078125e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 4,
+      "call_id": "test_005_package_change"
+    },
+    {
+      "test_id": 6,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "hard",
+        "customer_state": "contract_locked"
+      },
+      "customer_data": {
+        "phone_number": "53559882917",
+        "name": "Ahmet",
+        "surname": "Şahin",
+        "tc_last_digits": "88",
+        "sim_pin": "5239",
+        "payment_status": "Odendi",
+        "balance": 36.22963447416451,
+        "contract_end_date": "2026-06-30"
+      },
+      "user_inputs": [
+        "Paketimi değiştirmek istiyorum",
+        "Hangi paketler var?",
+        "Bu paket bana uygun değil",
+        "Başka seçenek yok mu?",
+        "Sözleşmem ne zaman bitiyor?",
+        "Tamam, bekleyeceğim"
+      ],
+      "success": false,
+      "duration": 3.814697265625e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 1,
+      "satisfaction": 3,
+      "call_id": "test_006_package_change"
+    },
+    {
+      "test_id": 7,
+      "scenario": {
+        "type": "billing_inquiry",
+        "difficulty": "hard",
+        "customer_state": "disputed"
+      },
+      "customer_data": {
+        "phone_number": "53759242536",
+        "name": "Zeynep",
+        "surname": "Çelik",
+        "tc_last_digits": "31",
+        "sim_pin": "7915",
+        "payment_status": "Itiraz",
+        "balance": -200.79147759583304,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura bilgilerimi görmek istiyorum",
+        "Bu fatura yanlış",
+        "Ben bu kadar kullanmadım",
+        "İtiraz etmek istiyorum",
+        "Nasıl yapabilirim?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.430511474609375e-06,
+      "tool_calls": 2,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 4,
+      "call_id": "test_007_billing_inquiry"
+    },
+    {
+      "test_id": 8,
+      "scenario": {
+        "type": "technical_support",
+        "difficulty": "easy",
+        "issue": "connection_slow"
+      },
+      "customer_data": {
+        "phone_number": "53575735270",
+        "name": "Ali",
+        "surname": "Şahin",
+        "tc_last_digits": "68",
+        "sim_pin": "3567",
+        "payment_status": "Odendi",
+        "balance": 31.60043267726722,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "İnternetim yavaş",
+        "Hız testi yapabilir misiniz?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 2.86102294921875e-06,
+      "tool_calls": 1,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_008_technical_support"
+    },
+    {
+      "test_id": 9,
+      "scenario": {
+        "type": "technical_support",
+        "difficulty": "hard",
+        "issue": "router_problem"
+      },
+      "customer_data": {
+        "phone_number": "53759762265",
+        "name": "Fatma",
+        "surname": "Demir",
+        "tc_last_digits": "46",
+        "sim_pin": "5477",
+        "payment_status": "Odendi",
+        "balance": 77.96671042728563,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "İnternet sorunum var",
+        "Modem ışıkları yanıp sönüyor",
+        "Kabloları kontrol ettim",
+        "Başka bir sorun olabilir mi?",
+        "Teknisyen ne zaman gelebilir?",
+        "Acil mi?"
+      ],
+      "success": true,
+      "duration": 3.0994415283203125e-06,
+      "tool_calls": 1,
+      "context_switches": 1,
+      "error_count": 0,
+      "satisfaction": 4,
+      "call_id": "test_009_technical_support"
+    },
+    {
+      "test_id": 10,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "expert",
+        "customer_state": "multiple_issues"
+      },
+      "customer_data": {
+        "phone_number": "53110359677",
+        "name": "Ali",
+        "surname": "Demir",
+        "tc_last_digits": "60",
+        "sim_pin": "7626",
+        "payment_status": "Gecikmis",
+        "balance": -137.11434116765815,
+        "contract_end_date": "2026-03-15"
+      },
+      "user_inputs": [
+        "Paket değişikliği yapmak istiyorum",
+        "Önce fatura durumumu öğrenmek istiyorum",
+        "Borç mu var?",
+        "Nasıl ödeyebilirim?",
+        "Şimdi paket değişikliği yapabilir miyim?",
+        "Hangi paketler uygun?",
+        "Bu paket iyi görünüyor",
+        "Hayır, başka bir şey yok"
+      ],
+      "success": true,
+      "duration": 9.5367431640625e-07,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 2,
+      "call_id": "test_010_package_change"
+    },
+    {
+      "test_id": 11,
+      "scenario": {
+        "type": "technical_support",
+        "difficulty": "easy",
+        "issue": "connection_slow"
+      },
+      "customer_data": {
+        "phone_number": "53613886999",
+        "name": "Mehmet",
+        "surname": "Çelik",
+        "tc_last_digits": "78",
+        "sim_pin": "9474",
+        "payment_status": "Odendi",
+        "balance": 31.906188218163756,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "İnternetim yavaş",
+        "Hız testi yapabilir misiniz?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.430511474609375e-06,
+      "tool_calls": 1,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_011_technical_support"
+    },
+    {
+      "test_id": 12,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "hard",
+        "customer_state": "contract_locked"
+      },
+      "customer_data": {
+        "phone_number": "53417029987",
+        "name": "Mehmet",
+        "surname": "Şahin",
+        "tc_last_digits": "45",
+        "sim_pin": "2054",
+        "payment_status": "Odendi",
+        "balance": 40.19449042570144,
+        "contract_end_date": "2026-06-30"
+      },
+      "user_inputs": [
+        "Paketimi değiştirmek istiyorum",
+        "Hangi paketler var?",
+        "Bu paket bana uygun değil",
+        "Başka seçenek yok mu?",
+        "Sözleşmem ne zaman bitiyor?",
+        "Tamam, bekleyeceğim"
+      ],
+      "success": true,
+      "duration": 2.1457672119140625e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_012_package_change"
+    },
+    {
+      "test_id": 13,
+      "scenario": {
+        "type": "billing_inquiry",
+        "difficulty": "medium",
+        "customer_state": "overdue"
+      },
+      "customer_data": {
+        "phone_number": "53474371898",
+        "name": "Ahmet",
+        "surname": "Demir",
+        "tc_last_digits": "35",
+        "sim_pin": "3766",
+        "payment_status": "Gecikmis",
+        "balance": -144.34312115646773,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura durumumu kontrol etmek istiyorum",
+        "Borç var mı?",
+        "Ne kadar borç var?",
+        "Nasıl ödeyebilirim?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.1920928955078125e-06,
+      "tool_calls": 2,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_013_billing_inquiry"
+    },
+    {
+      "test_id": 14,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "medium",
+        "customer_state": "delayed_payment"
+      },
+      "customer_data": {
+        "phone_number": "53009515979",
+        "name": "Ali",
+        "surname": "Yılmaz",
+        "tc_last_digits": "61",
+        "sim_pin": "9489",
+        "payment_status": "Gecikmis",
+        "balance": -52.989095478581724,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Paket değişikliği yapmak istiyorum",
+        "Fiyatları görebilir miyim?",
+        "Bu paket çok pahalı, daha ucuzu yok mu?",
+        "Tamam, Ekonomik Paket'i alayım",
+        "Hayır, teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.9073486328125e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 4,
+      "call_id": "test_014_package_change"
+    },
+    {
+      "test_id": 15,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "medium",
+        "customer_state": "delayed_payment"
+      },
+      "customer_data": {
+        "phone_number": "53389718834",
+        "name": "Ali",
+        "surname": "Kaya",
+        "tc_last_digits": "62",
+        "sim_pin": "5631",
+        "payment_status": "Gecikmis",
+        "balance": -62.70518476004975,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Paket değişikliği yapmak istiyorum",
+        "Fiyatları görebilir miyim?",
+        "Bu paket çok pahalı, daha ucuzu yok mu?",
+        "Tamam, Ekonomik Paket'i alayım",
+        "Hayır, teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.6689300537109375e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_015_package_change"
+    },
+    {
+      "test_id": 16,
+      "scenario": {
+        "type": "technical_support",
+        "difficulty": "medium",
+        "issue": "no_internet"
+      },
+      "customer_data": {
+        "phone_number": "53413293354",
+        "name": "Zeynep",
+        "surname": "Şahin",
+        "tc_last_digits": "92",
+        "sim_pin": "8494",
+        "payment_status": "Odendi",
+        "balance": 31.470789221245145,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "İnternet bağlantım yok",
+        "Modem çalışıyor mu?",
+        "Yeniden başlatayım mı?",
+        "Hala çalışmıyor",
+        "Teknisyen gönderin"
+      ],
+      "success": true,
+      "duration": 1.1920928955078125e-06,
+      "tool_calls": 1,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 4,
+      "call_id": "test_016_technical_support"
+    },
+    {
+      "test_id": 17,
+      "scenario": {
+        "type": "billing_inquiry",
+        "difficulty": "hard",
+        "customer_state": "disputed"
+      },
+      "customer_data": {
+        "phone_number": "53430306298",
+        "name": "Fatma",
+        "surname": "Şahin",
+        "tc_last_digits": "70",
+        "sim_pin": "5395",
+        "payment_status": "Itiraz",
+        "balance": -100.09719195937757,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura bilgilerimi görmek istiyorum",
+        "Bu fatura yanlış",
+        "Ben bu kadar kullanmadım",
+        "İtiraz etmek istiyorum",
+        "Nasıl yapabilirim?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.430511474609375e-06,
+      "tool_calls": 2,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 3,
+      "call_id": "test_017_billing_inquiry"
+    },
+    {
+      "test_id": 18,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "medium",
+        "customer_state": "delayed_payment"
+      },
+      "customer_data": {
+        "phone_number": "53628309356",
+        "name": "Zeynep",
+        "surname": "Çelik",
+        "tc_last_digits": "40",
+        "sim_pin": "7484",
+        "payment_status": "Gecikmis",
+        "balance": -17.93349644598969,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Paket değişikliği yapmak istiyorum",
+        "Fiyatları görebilir miyim?",
+        "Bu paket çok pahalı, daha ucuzu yok mu?",
+        "Tamam, Ekonomik Paket'i alayım",
+        "Hayır, teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.430511474609375e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 4,
+      "call_id": "test_018_package_change"
+    },
+    {
+      "test_id": 19,
+      "scenario": {
+        "type": "context_switch",
+        "difficulty": "medium",
+        "switch_type": "package_to_billing"
+      },
+      "customer_data": {
+        "phone_number": "53288710111",
+        "name": "Ayşe",
+        "surname": "Yıldız",
+        "tc_last_digits": "71",
+        "sim_pin": "7096",
+        "payment_status": "Odendi",
+        "balance": 9.227349090547953,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Paket değişikliği yapmak istiyorum",
+        "Önce fatura durumumu öğrenmek istiyorum",
+        "Borç var mı?",
+        "Şimdi paket değişikliği yapabilir miyim?",
+        "Hangi paketler var?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 2.384185791015625e-06,
+      "tool_calls": 3,
+      "context_switches": 1,
+      "error_count": 0,
+      "satisfaction": 4,
+      "call_id": "test_019_context_switch"
+    },
+    {
+      "test_id": 20,
+      "scenario": {
+        "type": "billing_inquiry",
+        "difficulty": "easy",
+        "customer_state": "paid"
+      },
+      "customer_data": {
+        "phone_number": "53023770690",
+        "name": "Fatma",
+        "surname": "Şahin",
+        "tc_last_digits": "71",
+        "sim_pin": "4397",
+        "payment_status": "Odendi",
+        "balance": 30.044897822235118,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura bilgilerimi öğrenmek istiyorum",
+        "Son faturam ne kadar?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.1920928955078125e-06,
+      "tool_calls": 2,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_020_billing_inquiry"
+    },
+    {
+      "test_id": 21,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "medium",
+        "customer_state": "delayed_payment"
+      },
+      "customer_data": {
+        "phone_number": "53994866803",
+        "name": "Ayşe",
+        "surname": "Şahin",
+        "tc_last_digits": "40",
+        "sim_pin": "7673",
+        "payment_status": "Gecikmis",
+        "balance": -66.68132188521739,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Paket değişikliği yapmak istiyorum",
+        "Fiyatları görebilir miyim?",
+        "Bu paket çok pahalı, daha ucuzu yok mu?",
+        "Tamam, Ekonomik Paket'i alayım",
+        "Hayır, teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.1920928955078125e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 4,
+      "call_id": "test_021_package_change"
+    },
+    {
+      "test_id": 22,
+      "scenario": {
+        "type": "billing_inquiry",
+        "difficulty": "medium",
+        "customer_state": "overdue"
+      },
+      "customer_data": {
+        "phone_number": "53837778797",
+        "name": "Ayşe",
+        "surname": "Kaya",
+        "tc_last_digits": "71",
+        "sim_pin": "5235",
+        "payment_status": "Gecikmis",
+        "balance": -41.634261985252024,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura durumumu kontrol etmek istiyorum",
+        "Borç var mı?",
+        "Ne kadar borç var?",
+        "Nasıl ödeyebilirim?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.6689300537109375e-06,
+      "tool_calls": 2,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_022_billing_inquiry"
+    },
+    {
+      "test_id": 23,
+      "scenario": {
+        "type": "billing_inquiry",
+        "difficulty": "hard",
+        "customer_state": "disputed"
+      },
+      "customer_data": {
+        "phone_number": "53421660578",
+        "name": "Ali",
+        "surname": "Yıldız",
+        "tc_last_digits": "81",
+        "sim_pin": "8985",
+        "payment_status": "Itiraz",
+        "balance": -244.07746455939503,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura bilgilerimi görmek istiyorum",
+        "Bu fatura yanlış",
+        "Ben bu kadar kullanmadım",
+        "İtiraz etmek istiyorum",
+        "Nasıl yapabilirim?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.1920928955078125e-06,
+      "tool_calls": 2,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_023_billing_inquiry"
+    },
+    {
+      "test_id": 24,
+      "scenario": {
+        "type": "billing_inquiry",
+        "difficulty": "expert",
+        "customer_state": "fraud_suspicion"
+      },
+      "customer_data": {
+        "phone_number": "53225655832",
+        "name": "Ali",
+        "surname": "Kaya",
+        "tc_last_digits": "75",
+        "sim_pin": "2484",
+        "payment_status": "Donduruldu",
+        "balance": -344.2412244748566,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura durumumu öğrenmek istiyorum",
+        "Bu fatura çok yüksek",
+        "Ben bu hizmetleri kullanmadım",
+        "Dolandırılıyorum",
+        "Avukatımla konuşacağım",
+        "İtiraz sürecini başlatın",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 2.384185791015625e-06,
+      "tool_calls": 2,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 2,
+      "call_id": "test_024_billing_inquiry"
+    },
+    {
+      "test_id": 25,
+      "scenario": {
+        "type": "billing_inquiry",
+        "difficulty": "expert",
+        "customer_state": "fraud_suspicion"
+      },
+      "customer_data": {
+        "phone_number": "53826568235",
+        "name": "Fatma",
+        "surname": "Demir",
+        "tc_last_digits": "78",
+        "sim_pin": "4062",
+        "payment_status": "Donduruldu",
+        "balance": -412.66816214400797,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura durumumu öğrenmek istiyorum",
+        "Bu fatura çok yüksek",
+        "Ben bu hizmetleri kullanmadım",
+        "Dolandırılıyorum",
+        "Avukatımla konuşacağım",
+        "İtiraz sürecini başlatın",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 5.245208740234375e-06,
+      "tool_calls": 2,
+      "context_switches": 0,
+      "error_count": 1,
+      "satisfaction": 3,
+      "call_id": "test_025_billing_inquiry"
+    },
+    {
+      "test_id": 26,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "expert",
+        "customer_state": "multiple_issues"
+      },
+      "customer_data": {
+        "phone_number": "53899786985",
+        "name": "Ayşe",
+        "surname": "Kaya",
+        "tc_last_digits": "20",
+        "sim_pin": "1863",
+        "payment_status": "Gecikmis",
+        "balance": -80.10001042466321,
+        "contract_end_date": "2026-03-15"
+      },
+      "user_inputs": [
+        "Paket değişikliği yapmak istiyorum",
+        "Önce fatura durumumu öğrenmek istiyorum",
+        "Borç mu var?",
+        "Nasıl ödeyebilirim?",
+        "Şimdi paket değişikliği yapabilir miyim?",
+        "Hangi paketler uygun?",
+        "Bu paket iyi görünüyor",
+        "Hayır, başka bir şey yok"
+      ],
+      "success": true,
+      "duration": 1.6689300537109375e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 4,
+      "call_id": "test_026_package_change"
+    },
+    {
+      "test_id": 27,
+      "scenario": {
+        "type": "billing_inquiry",
+        "difficulty": "expert",
+        "customer_state": "fraud_suspicion"
+      },
+      "customer_data": {
+        "phone_number": "53026478796",
+        "name": "Ayşe",
+        "surname": "Kaya",
+        "tc_last_digits": "17",
+        "sim_pin": "3871",
+        "payment_status": "Donduruldu",
+        "balance": -392.2196377219507,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura durumumu öğrenmek istiyorum",
+        "Bu fatura çok yüksek",
+        "Ben bu hizmetleri kullanmadım",
+        "Dolandırılıyorum",
+        "Avukatımla konuşacağım",
+        "İtiraz sürecini başlatın",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 2.1457672119140625e-06,
+      "tool_calls": 2,
+      "context_switches": 0,
+      "error_count": 1,
+      "satisfaction": 2,
+      "call_id": "test_027_billing_inquiry"
+    },
+    {
+      "test_id": 28,
+      "scenario": {
+        "type": "context_switch",
+        "difficulty": "hard",
+        "switch_type": "billing_to_technical"
+      },
+      "customer_data": {
+        "phone_number": "53985731892",
+        "name": "Mehmet",
+        "surname": "Kaya",
+        "tc_last_digits": "84",
+        "sim_pin": "1312",
+        "payment_status": "Odendi",
+        "balance": 23.01747412981392,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura bilgilerimi öğrenmek istiyorum",
+        "Bu fatura yanlış",
+        "Aslında paket değişikliği de yapmak istiyorum",
+        "Hangi paketler uygun?",
+        "Fiyatları görebilir miyim?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 2.6226043701171875e-06,
+      "tool_calls": 3,
+      "context_switches": 1,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_028_context_switch"
+    },
+    {
+      "test_id": 29,
+      "scenario": {
+        "type": "billing_inquiry",
+        "difficulty": "medium",
+        "customer_state": "overdue"
+      },
+      "customer_data": {
+        "phone_number": "53760961492",
+        "name": "Fatma",
+        "surname": "Çelik",
+        "tc_last_digits": "74",
+        "sim_pin": "5989",
+        "payment_status": "Gecikmis",
+        "balance": -35.71573189536046,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura durumumu kontrol etmek istiyorum",
+        "Borç var mı?",
+        "Ne kadar borç var?",
+        "Nasıl ödeyebilirim?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.1920928955078125e-06,
+      "tool_calls": 2,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 4,
+      "call_id": "test_029_billing_inquiry"
+    },
+    {
+      "test_id": 30,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "hard",
+        "customer_state": "contract_locked"
+      },
+      "customer_data": {
+        "phone_number": "53857561269",
+        "name": "Fatma",
+        "surname": "Kaya",
+        "tc_last_digits": "14",
+        "sim_pin": "8110",
+        "payment_status": "Odendi",
+        "balance": 17.260702960274056,
+        "contract_end_date": "2026-06-30"
+      },
+      "user_inputs": [
+        "Paketimi değiştirmek istiyorum",
+        "Hangi paketler var?",
+        "Bu paket bana uygun değil",
+        "Başka seçenek yok mu?",
+        "Sözleşmem ne zaman bitiyor?",
+        "Tamam, bekleyeceğim"
+      ],
+      "success": false,
+      "duration": 2.1457672119140625e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 1,
+      "satisfaction": 5,
+      "call_id": "test_030_package_change"
+    },
+    {
+      "test_id": 31,
+      "scenario": {
+        "type": "context_switch",
+        "difficulty": "hard",
+        "switch_type": "billing_to_technical"
+      },
+      "customer_data": {
+        "phone_number": "53123284116",
+        "name": "Fatma",
+        "surname": "Şahin",
+        "tc_last_digits": "92",
+        "sim_pin": "5620",
+        "payment_status": "Odendi",
+        "balance": 88.40900811213096,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura bilgilerimi öğrenmek istiyorum",
+        "Bu fatura yanlış",
+        "Aslında paket değişikliği de yapmak istiyorum",
+        "Hangi paketler uygun?",
+        "Fiyatları görebilir miyim?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 2.86102294921875e-06,
+      "tool_calls": 3,
+      "context_switches": 1,
+      "error_count": 0,
+      "satisfaction": 4,
+      "call_id": "test_031_context_switch"
+    },
+    {
+      "test_id": 32,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "hard",
+        "customer_state": "contract_locked"
+      },
+      "customer_data": {
+        "phone_number": "53098463143",
+        "name": "Ahmet",
+        "surname": "Çelik",
+        "tc_last_digits": "25",
+        "sim_pin": "6795",
+        "payment_status": "Odendi",
+        "balance": 29.928201675662052,
+        "contract_end_date": "2026-06-30"
+      },
+      "user_inputs": [
+        "Paketimi değiştirmek istiyorum",
+        "Hangi paketler var?",
+        "Bu paket bana uygun değil",
+        "Başka seçenek yok mu?",
+        "Sözleşmem ne zaman bitiyor?",
+        "Tamam, bekleyeceğim"
+      ],
+      "success": true,
+      "duration": 2.384185791015625e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 4,
+      "call_id": "test_032_package_change"
+    },
+    {
+      "test_id": 33,
+      "scenario": {
+        "type": "technical_support",
+        "difficulty": "easy",
+        "issue": "connection_slow"
+      },
+      "customer_data": {
+        "phone_number": "53955718500",
+        "name": "Mehmet",
+        "surname": "Yıldız",
+        "tc_last_digits": "94",
+        "sim_pin": "5888",
+        "payment_status": "Odendi",
+        "balance": 79.10358190046176,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "İnternetim yavaş",
+        "Hız testi yapabilir misiniz?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 2.1457672119140625e-06,
+      "tool_calls": 1,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_033_technical_support"
+    },
+    {
+      "test_id": 34,
+      "scenario": {
+        "type": "billing_inquiry",
+        "difficulty": "easy",
+        "customer_state": "paid"
+      },
+      "customer_data": {
+        "phone_number": "53895807745",
+        "name": "Zeynep",
+        "surname": "Şahin",
+        "tc_last_digits": "22",
+        "sim_pin": "9127",
+        "payment_status": "Odendi",
+        "balance": 45.369234163818696,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura bilgilerimi öğrenmek istiyorum",
+        "Son faturam ne kadar?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.9073486328125e-06,
+      "tool_calls": 2,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_034_billing_inquiry"
+    },
+    {
+      "test_id": 35,
+      "scenario": {
+        "type": "context_switch",
+        "difficulty": "medium",
+        "switch_type": "package_to_billing"
+      },
+      "customer_data": {
+        "phone_number": "53217898285",
+        "name": "Mehmet",
+        "surname": "Demir",
+        "tc_last_digits": "22",
+        "sim_pin": "8698",
+        "payment_status": "Odendi",
+        "balance": 48.54333682649552,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Paket değişikliği yapmak istiyorum",
+        "Önce fatura durumumu öğrenmek istiyorum",
+        "Borç var mı?",
+        "Şimdi paket değişikliği yapabilir miyim?",
+        "Hangi paketler var?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.430511474609375e-06,
+      "tool_calls": 3,
+      "context_switches": 1,
+      "error_count": 0,
+      "satisfaction": 4,
+      "call_id": "test_035_context_switch"
+    },
+    {
+      "test_id": 36,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "hard",
+        "customer_state": "contract_locked"
+      },
+      "customer_data": {
+        "phone_number": "53925305969",
+        "name": "Ayşe",
+        "surname": "Çelik",
+        "tc_last_digits": "25",
+        "sim_pin": "9426",
+        "payment_status": "Odendi",
+        "balance": 13.15852851042283,
+        "contract_end_date": "2026-06-30"
+      },
+      "user_inputs": [
+        "Paketimi değiştirmek istiyorum",
+        "Hangi paketler var?",
+        "Bu paket bana uygun değil",
+        "Başka seçenek yok mu?",
+        "Sözleşmem ne zaman bitiyor?",
+        "Tamam, bekleyeceğim"
+      ],
+      "success": true,
+      "duration": 1.1920928955078125e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 3,
+      "call_id": "test_036_package_change"
+    },
+    {
+      "test_id": 37,
+      "scenario": {
+        "type": "technical_support",
+        "difficulty": "expert",
+        "issue": "complex_network"
+      },
+      "customer_data": {
+        "phone_number": "53659911510",
+        "name": "Ahmet",
+        "surname": "Şahin",
+        "tc_last_digits": "74",
+        "sim_pin": "4182",
+        "payment_status": "Odendi",
+        "balance": 71.84993037555091,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Karmaşık bir ağ sorunum var",
+        "Birden fazla cihaz bağlı",
+        "Bazı cihazlar çalışıyor bazıları çalışmıyor",
+        "Firewall ayarları değişti mi?",
+        "IP adresim değişti mi?",
+        "DNS ayarlarını kontrol edin",
+        "Teknisyen gönderin"
+      ],
+      "success": true,
+      "duration": 3.0994415283203125e-06,
+      "tool_calls": 1,
+      "context_switches": 1,
+      "error_count": 0,
+      "satisfaction": 3,
+      "call_id": "test_037_technical_support"
+    },
+    {
+      "test_id": 38,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "medium",
+        "customer_state": "delayed_payment"
+      },
+      "customer_data": {
+        "phone_number": "53378660638",
+        "name": "Fatma",
+        "surname": "Yılmaz",
+        "tc_last_digits": "43",
+        "sim_pin": "8361",
+        "payment_status": "Gecikmis",
+        "balance": -61.97232650391179,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Paket değişikliği yapmak istiyorum",
+        "Fiyatları görebilir miyim?",
+        "Bu paket çok pahalı, daha ucuzu yok mu?",
+        "Tamam, Ekonomik Paket'i alayım",
+        "Hayır, teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.430511474609375e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_038_package_change"
+    },
+    {
+      "test_id": 39,
+      "scenario": {
+        "type": "technical_support",
+        "difficulty": "hard",
+        "issue": "router_problem"
+      },
+      "customer_data": {
+        "phone_number": "53285502193",
+        "name": "Fatma",
+        "surname": "Yılmaz",
+        "tc_last_digits": "98",
+        "sim_pin": "7046",
+        "payment_status": "Odendi",
+        "balance": 24.24918918149841,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "İnternet sorunum var",
+        "Modem ışıkları yanıp sönüyor",
+        "Kabloları kontrol ettim",
+        "Başka bir sorun olabilir mi?",
+        "Teknisyen ne zaman gelebilir?",
+        "Acil mi?"
+      ],
+      "success": true,
+      "duration": 2.1457672119140625e-06,
+      "tool_calls": 1,
+      "context_switches": 1,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_039_technical_support"
+    },
+    {
+      "test_id": 40,
+      "scenario": {
+        "type": "billing_inquiry",
+        "difficulty": "easy",
+        "customer_state": "paid"
+      },
+      "customer_data": {
+        "phone_number": "53535952069",
+        "name": "Zeynep",
+        "surname": "Yıldız",
+        "tc_last_digits": "71",
+        "sim_pin": "6585",
+        "payment_status": "Odendi",
+        "balance": 33.56682201834284,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura bilgilerimi öğrenmek istiyorum",
+        "Son faturam ne kadar?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.9073486328125e-06,
+      "tool_calls": 2,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_040_billing_inquiry"
+    },
+    {
+      "test_id": 41,
+      "scenario": {
+        "type": "technical_support",
+        "difficulty": "medium",
+        "issue": "no_internet"
+      },
+      "customer_data": {
+        "phone_number": "53700824977",
+        "name": "Ayşe",
+        "surname": "Kaya",
+        "tc_last_digits": "76",
+        "sim_pin": "8992",
+        "payment_status": "Odendi",
+        "balance": 29.7330541221513,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "İnternet bağlantım yok",
+        "Modem çalışıyor mu?",
+        "Yeniden başlatayım mı?",
+        "Hala çalışmıyor",
+        "Teknisyen gönderin"
+      ],
+      "success": true,
+      "duration": 1.430511474609375e-06,
+      "tool_calls": 1,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_041_technical_support"
+    },
+    {
+      "test_id": 42,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "hard",
+        "customer_state": "contract_locked"
+      },
+      "customer_data": {
+        "phone_number": "53746952793",
+        "name": "Zeynep",
+        "surname": "Çelik",
+        "tc_last_digits": "43",
+        "sim_pin": "1991",
+        "payment_status": "Odendi",
+        "balance": 47.06979217882427,
+        "contract_end_date": "2026-06-30"
+      },
+      "user_inputs": [
+        "Paketimi değiştirmek istiyorum",
+        "Hangi paketler var?",
+        "Bu paket bana uygun değil",
+        "Başka seçenek yok mu?",
+        "Sözleşmem ne zaman bitiyor?",
+        "Tamam, bekleyeceğim"
+      ],
+      "success": true,
+      "duration": 1.6689300537109375e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 4,
+      "call_id": "test_042_package_change"
+    },
+    {
+      "test_id": 43,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "expert",
+        "customer_state": "multiple_issues"
+      },
+      "customer_data": {
+        "phone_number": "53320129324",
+        "name": "Fatma",
+        "surname": "Yıldız",
+        "tc_last_digits": "52",
+        "sim_pin": "8072",
+        "payment_status": "Gecikmis",
+        "balance": -53.1039384136877,
+        "contract_end_date": "2026-03-15"
+      },
+      "user_inputs": [
+        "Paket değişikliği yapmak istiyorum",
+        "Önce fatura durumumu öğrenmek istiyorum",
+        "Borç mu var?",
+        "Nasıl ödeyebilirim?",
+        "Şimdi paket değişikliği yapabilir miyim?",
+        "Hangi paketler uygun?",
+        "Bu paket iyi görünüyor",
+        "Hayır, başka bir şey yok"
+      ],
+      "success": true,
+      "duration": 1.430511474609375e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 4,
+      "call_id": "test_043_package_change"
+    },
+    {
+      "test_id": 44,
+      "scenario": {
+        "type": "technical_support",
+        "difficulty": "hard",
+        "issue": "router_problem"
+      },
+      "customer_data": {
+        "phone_number": "53360719265",
+        "name": "Fatma",
+        "surname": "Kaya",
+        "tc_last_digits": "42",
+        "sim_pin": "3382",
+        "payment_status": "Odendi",
+        "balance": 72.7287104909143,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "İnternet sorunum var",
+        "Modem ışıkları yanıp sönüyor",
+        "Kabloları kontrol ettim",
+        "Başka bir sorun olabilir mi?",
+        "Teknisyen ne zaman gelebilir?",
+        "Acil mi?"
+      ],
+      "success": true,
+      "duration": 1.9073486328125e-06,
+      "tool_calls": 1,
+      "context_switches": 1,
+      "error_count": 0,
+      "satisfaction": 4,
+      "call_id": "test_044_technical_support"
+    },
+    {
+      "test_id": 45,
+      "scenario": {
+        "type": "billing_inquiry",
+        "difficulty": "easy",
+        "customer_state": "paid"
+      },
+      "customer_data": {
+        "phone_number": "53310233720",
+        "name": "Ayşe",
+        "surname": "Yılmaz",
+        "tc_last_digits": "62",
+        "sim_pin": "4902",
+        "payment_status": "Odendi",
+        "balance": 2.678434999705698,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura bilgilerimi öğrenmek istiyorum",
+        "Son faturam ne kadar?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.9073486328125e-06,
+      "tool_calls": 2,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_045_billing_inquiry"
+    },
+    {
+      "test_id": 46,
+      "scenario": {
+        "type": "context_switch",
+        "difficulty": "expert",
+        "switch_type": "multiple_switches"
+      },
+      "customer_data": {
+        "phone_number": "53311132260",
+        "name": "Ayşe",
+        "surname": "Demir",
+        "tc_last_digits": "74",
+        "sim_pin": "1655",
+        "payment_status": "Odendi",
+        "balance": 64.81749209791167,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "İnternet sorunum var",
+        "Modem çalışmıyor",
+        "Aslında fatura da ödemek istiyorum",
+        "Ne kadar borç var?",
+        "Şimdi paket değişikliği de yapabilir miyim?",
+        "Hangi paketler var?",
+        "Teknisyen de gönderin",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 6.198883056640625e-06,
+      "tool_calls": 3,
+      "context_switches": 2,
+      "error_count": 1,
+      "satisfaction": 4,
+      "call_id": "test_046_context_switch"
+    },
+    {
+      "test_id": 47,
+      "scenario": {
+        "type": "billing_inquiry",
+        "difficulty": "easy",
+        "customer_state": "paid"
+      },
+      "customer_data": {
+        "phone_number": "53990608164",
+        "name": "Fatma",
+        "surname": "Yıldız",
+        "tc_last_digits": "62",
+        "sim_pin": "4496",
+        "payment_status": "Odendi",
+        "balance": 8.8943394053912,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura bilgilerimi öğrenmek istiyorum",
+        "Son faturam ne kadar?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.6689300537109375e-06,
+      "tool_calls": 2,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_047_billing_inquiry"
+    },
+    {
+      "test_id": 48,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "hard",
+        "customer_state": "contract_locked"
+      },
+      "customer_data": {
+        "phone_number": "53063145295",
+        "name": "Ayşe",
+        "surname": "Şahin",
+        "tc_last_digits": "11",
+        "sim_pin": "9492",
+        "payment_status": "Odendi",
+        "balance": 2.073259452919407,
+        "contract_end_date": "2026-06-30"
+      },
+      "user_inputs": [
+        "Paketimi değiştirmek istiyorum",
+        "Hangi paketler var?",
+        "Bu paket bana uygun değil",
+        "Başka seçenek yok mu?",
+        "Sözleşmem ne zaman bitiyor?",
+        "Tamam, bekleyeceğim"
+      ],
+      "success": false,
+      "duration": 3.337860107421875e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 1,
+      "satisfaction": 3,
+      "call_id": "test_048_package_change"
+    },
+    {
+      "test_id": 49,
+      "scenario": {
+        "type": "technical_support",
+        "difficulty": "expert",
+        "issue": "complex_network"
+      },
+      "customer_data": {
+        "phone_number": "53537662929",
+        "name": "Ali",
+        "surname": "Şahin",
+        "tc_last_digits": "18",
+        "sim_pin": "8497",
+        "payment_status": "Odendi",
+        "balance": 41.05148310850384,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Karmaşık bir ağ sorunum var",
+        "Birden fazla cihaz bağlı",
+        "Bazı cihazlar çalışıyor bazıları çalışmıyor",
+        "Firewall ayarları değişti mi?",
+        "IP adresim değişti mi?",
+        "DNS ayarlarını kontrol edin",
+        "Teknisyen gönderin"
+      ],
+      "success": true,
+      "duration": 2.1457672119140625e-06,
+      "tool_calls": 1,
+      "context_switches": 1,
+      "error_count": 0,
+      "satisfaction": 2,
+      "call_id": "test_049_technical_support"
+    },
+    {
+      "test_id": 50,
+      "scenario": {
+        "type": "technical_support",
+        "difficulty": "expert",
+        "issue": "complex_network"
+      },
+      "customer_data": {
+        "phone_number": "53168828021",
+        "name": "Ahmet",
+        "surname": "Kaya",
+        "tc_last_digits": "66",
+        "sim_pin": "3198",
+        "payment_status": "Odendi",
+        "balance": 43.57766731612437,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Karmaşık bir ağ sorunum var",
+        "Birden fazla cihaz bağlı",
+        "Bazı cihazlar çalışıyor bazıları çalışmıyor",
+        "Firewall ayarları değişti mi?",
+        "IP adresim değişti mi?",
+        "DNS ayarlarını kontrol edin",
+        "Teknisyen gönderin"
+      ],
+      "success": true,
+      "duration": 2.1457672119140625e-06,
+      "tool_calls": 1,
+      "context_switches": 1,
+      "error_count": 0,
+      "satisfaction": 2,
+      "call_id": "test_050_technical_support"
+    },
+    {
+      "test_id": 51,
+      "scenario": {
+        "type": "context_switch",
+        "difficulty": "medium",
+        "switch_type": "package_to_billing"
+      },
+      "customer_data": {
+        "phone_number": "53848158430",
+        "name": "Ayşe",
+        "surname": "Çelik",
+        "tc_last_digits": "69",
+        "sim_pin": "3664",
+        "payment_status": "Odendi",
+        "balance": 89.22634676801864,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Paket değişikliği yapmak istiyorum",
+        "Önce fatura durumumu öğrenmek istiyorum",
+        "Borç var mı?",
+        "Şimdi paket değişikliği yapabilir miyim?",
+        "Hangi paketler var?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.1920928955078125e-06,
+      "tool_calls": 3,
+      "context_switches": 1,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_051_context_switch"
+    },
+    {
+      "test_id": 52,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "expert",
+        "customer_state": "multiple_issues"
+      },
+      "customer_data": {
+        "phone_number": "53799445573",
+        "name": "Ahmet",
+        "surname": "Kaya",
+        "tc_last_digits": "12",
+        "sim_pin": "8208",
+        "payment_status": "Gecikmis",
+        "balance": -161.52420235708828,
+        "contract_end_date": "2026-03-15"
+      },
+      "user_inputs": [
+        "Paket değişikliği yapmak istiyorum",
+        "Önce fatura durumumu öğrenmek istiyorum",
+        "Borç mu var?",
+        "Nasıl ödeyebilirim?",
+        "Şimdi paket değişikliği yapabilir miyim?",
+        "Hangi paketler uygun?",
+        "Bu paket iyi görünüyor",
+        "Hayır, başka bir şey yok"
+      ],
+      "success": true,
+      "duration": 9.5367431640625e-07,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 2,
+      "call_id": "test_052_package_change"
+    },
+    {
+      "test_id": 53,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "easy",
+        "customer_state": "normal"
+      },
+      "customer_data": {
+        "phone_number": "53539858529",
+        "name": "Zeynep",
+        "surname": "Yıldız",
+        "tc_last_digits": "14",
+        "sim_pin": "4045",
+        "payment_status": "Odendi",
+        "balance": 22.548213182362396,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Paketimi değiştirmek istiyorum",
+        "Daha uygun fiyatlı bir paket var mı?",
+        "Evet, MegaPaket 100'ü istiyorum",
+        "Hayır, başka bir şey yok"
+      ],
+      "success": true,
+      "duration": 2.1457672119140625e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_053_package_change"
+    },
+    {
+      "test_id": 54,
+      "scenario": {
+        "type": "context_switch",
+        "difficulty": "expert",
+        "switch_type": "multiple_switches"
+      },
+      "customer_data": {
+        "phone_number": "53082039725",
+        "name": "Ayşe",
+        "surname": "Yıldız",
+        "tc_last_digits": "36",
+        "sim_pin": "7003",
+        "payment_status": "Odendi",
+        "balance": 82.31050703964644,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "İnternet sorunum var",
+        "Modem çalışmıyor",
+        "Aslında fatura da ödemek istiyorum",
+        "Ne kadar borç var?",
+        "Şimdi paket değişikliği de yapabilir miyim?",
+        "Hangi paketler var?",
+        "Teknisyen de gönderin",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 3.337860107421875e-06,
+      "tool_calls": 3,
+      "context_switches": 2,
+      "error_count": 1,
+      "satisfaction": 4,
+      "call_id": "test_054_context_switch"
+    },
+    {
+      "test_id": 55,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "medium",
+        "customer_state": "delayed_payment"
+      },
+      "customer_data": {
+        "phone_number": "53352099285",
+        "name": "Ayşe",
+        "surname": "Şahin",
+        "tc_last_digits": "33",
+        "sim_pin": "2809",
+        "payment_status": "Gecikmis",
+        "balance": -88.92518705250464,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Paket değişikliği yapmak istiyorum",
+        "Fiyatları görebilir miyim?",
+        "Bu paket çok pahalı, daha ucuzu yok mu?",
+        "Tamam, Ekonomik Paket'i alayım",
+        "Hayır, teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.1920928955078125e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_055_package_change"
+    },
+    {
+      "test_id": 56,
+      "scenario": {
+        "type": "billing_inquiry",
+        "difficulty": "easy",
+        "customer_state": "paid"
+      },
+      "customer_data": {
+        "phone_number": "53620040959",
+        "name": "Ayşe",
+        "surname": "Kaya",
+        "tc_last_digits": "17",
+        "sim_pin": "1825",
+        "payment_status": "Odendi",
+        "balance": 35.802624309491094,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura bilgilerimi öğrenmek istiyorum",
+        "Son faturam ne kadar?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 9.5367431640625e-07,
+      "tool_calls": 2,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_056_billing_inquiry"
+    },
+    {
+      "test_id": 57,
+      "scenario": {
+        "type": "billing_inquiry",
+        "difficulty": "medium",
+        "customer_state": "overdue"
+      },
+      "customer_data": {
+        "phone_number": "53977817413",
+        "name": "Ayşe",
+        "surname": "Demir",
+        "tc_last_digits": "89",
+        "sim_pin": "5885",
+        "payment_status": "Gecikmis",
+        "balance": -104.36866266686417,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura durumumu kontrol etmek istiyorum",
+        "Borç var mı?",
+        "Ne kadar borç var?",
+        "Nasıl ödeyebilirim?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.430511474609375e-06,
+      "tool_calls": 2,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_057_billing_inquiry"
+    },
+    {
+      "test_id": 58,
+      "scenario": {
+        "type": "billing_inquiry",
+        "difficulty": "hard",
+        "customer_state": "disputed"
+      },
+      "customer_data": {
+        "phone_number": "53620147160",
+        "name": "Zeynep",
+        "surname": "Kaya",
+        "tc_last_digits": "79",
+        "sim_pin": "4340",
+        "payment_status": "Itiraz",
+        "balance": -264.22486179593636,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura bilgilerimi görmek istiyorum",
+        "Bu fatura yanlış",
+        "Ben bu kadar kullanmadım",
+        "İtiraz etmek istiyorum",
+        "Nasıl yapabilirim?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 9.5367431640625e-07,
+      "tool_calls": 2,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 4,
+      "call_id": "test_058_billing_inquiry"
+    },
+    {
+      "test_id": 59,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "easy",
+        "customer_state": "normal"
+      },
+      "customer_data": {
+        "phone_number": "53432070304",
+        "name": "Fatma",
+        "surname": "Yıldız",
+        "tc_last_digits": "52",
+        "sim_pin": "5776",
+        "payment_status": "Odendi",
+        "balance": 91.25867227399763,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Paketimi değiştirmek istiyorum",
+        "Daha uygun fiyatlı bir paket var mı?",
+        "Evet, MegaPaket 100'ü istiyorum",
+        "Hayır, başka bir şey yok"
+      ],
+      "success": true,
+      "duration": 9.5367431640625e-07,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_059_package_change"
+    },
+    {
+      "test_id": 60,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "expert",
+        "customer_state": "multiple_issues"
+      },
+      "customer_data": {
+        "phone_number": "53758109485",
+        "name": "Zeynep",
+        "surname": "Demir",
+        "tc_last_digits": "22",
+        "sim_pin": "4681",
+        "payment_status": "Gecikmis",
+        "balance": -80.44970023670487,
+        "contract_end_date": "2026-03-15"
+      },
+      "user_inputs": [
+        "Paket değişikliği yapmak istiyorum",
+        "Önce fatura durumumu öğrenmek istiyorum",
+        "Borç mu var?",
+        "Nasıl ödeyebilirim?",
+        "Şimdi paket değişikliği yapabilir miyim?",
+        "Hangi paketler uygun?",
+        "Bu paket iyi görünüyor",
+        "Hayır, başka bir şey yok"
+      ],
+      "success": true,
+      "duration": 1.1920928955078125e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 4,
+      "call_id": "test_060_package_change"
+    },
+    {
+      "test_id": 61,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "medium",
+        "customer_state": "delayed_payment"
+      },
+      "customer_data": {
+        "phone_number": "53480701798",
+        "name": "Ayşe",
+        "surname": "Yıldız",
+        "tc_last_digits": "78",
+        "sim_pin": "6345",
+        "payment_status": "Gecikmis",
+        "balance": -72.89723789447058,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Paket değişikliği yapmak istiyorum",
+        "Fiyatları görebilir miyim?",
+        "Bu paket çok pahalı, daha ucuzu yok mu?",
+        "Tamam, Ekonomik Paket'i alayım",
+        "Hayır, teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.1920928955078125e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_061_package_change"
+    },
+    {
+      "test_id": 62,
+      "scenario": {
+        "type": "technical_support",
+        "difficulty": "expert",
+        "issue": "complex_network"
+      },
+      "customer_data": {
+        "phone_number": "53453428592",
+        "name": "Ayşe",
+        "surname": "Demir",
+        "tc_last_digits": "71",
+        "sim_pin": "7456",
+        "payment_status": "Odendi",
+        "balance": 20.01052131204588,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Karmaşık bir ağ sorunum var",
+        "Birden fazla cihaz bağlı",
+        "Bazı cihazlar çalışıyor bazıları çalışmıyor",
+        "Firewall ayarları değişti mi?",
+        "IP adresim değişti mi?",
+        "DNS ayarlarını kontrol edin",
+        "Teknisyen gönderin"
+      ],
+      "success": true,
+      "duration": 3.0994415283203125e-06,
+      "tool_calls": 1,
+      "context_switches": 1,
+      "error_count": 0,
+      "satisfaction": 2,
+      "call_id": "test_062_technical_support"
+    },
+    {
+      "test_id": 63,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "medium",
+        "customer_state": "delayed_payment"
+      },
+      "customer_data": {
+        "phone_number": "53824139422",
+        "name": "Mehmet",
+        "surname": "Demir",
+        "tc_last_digits": "40",
+        "sim_pin": "7236",
+        "payment_status": "Gecikmis",
+        "balance": -68.28300304302915,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Paket değişikliği yapmak istiyorum",
+        "Fiyatları görebilir miyim?",
+        "Bu paket çok pahalı, daha ucuzu yok mu?",
+        "Tamam, Ekonomik Paket'i alayım",
+        "Hayır, teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.1920928955078125e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 4,
+      "call_id": "test_063_package_change"
+    },
+    {
+      "test_id": 64,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "easy",
+        "customer_state": "normal"
+      },
+      "customer_data": {
+        "phone_number": "53584477247",
+        "name": "Mehmet",
+        "surname": "Yılmaz",
+        "tc_last_digits": "64",
+        "sim_pin": "4605",
+        "payment_status": "Odendi",
+        "balance": 37.92187647584401,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Paketimi değiştirmek istiyorum",
+        "Daha uygun fiyatlı bir paket var mı?",
+        "Evet, MegaPaket 100'ü istiyorum",
+        "Hayır, başka bir şey yok"
+      ],
+      "success": true,
+      "duration": 1.6689300537109375e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_064_package_change"
+    },
+    {
+      "test_id": 65,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "easy",
+        "customer_state": "normal"
+      },
+      "customer_data": {
+        "phone_number": "53724484984",
+        "name": "Ayşe",
+        "surname": "Şahin",
+        "tc_last_digits": "39",
+        "sim_pin": "7156",
+        "payment_status": "Odendi",
+        "balance": 91.85826081306672,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Paketimi değiştirmek istiyorum",
+        "Daha uygun fiyatlı bir paket var mı?",
+        "Evet, MegaPaket 100'ü istiyorum",
+        "Hayır, başka bir şey yok"
+      ],
+      "success": true,
+      "duration": 1.430511474609375e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_065_package_change"
+    },
+    {
+      "test_id": 66,
+      "scenario": {
+        "type": "billing_inquiry",
+        "difficulty": "expert",
+        "customer_state": "fraud_suspicion"
+      },
+      "customer_data": {
+        "phone_number": "53097419394",
+        "name": "Fatma",
+        "surname": "Yılmaz",
+        "tc_last_digits": "81",
+        "sim_pin": "8927",
+        "payment_status": "Donduruldu",
+        "balance": -403.61763433018297,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura durumumu öğrenmek istiyorum",
+        "Bu fatura çok yüksek",
+        "Ben bu hizmetleri kullanmadım",
+        "Dolandırılıyorum",
+        "Avukatımla konuşacağım",
+        "İtiraz sürecini başlatın",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 3.0994415283203125e-06,
+      "tool_calls": 2,
+      "context_switches": 0,
+      "error_count": 1,
+      "satisfaction": 2,
+      "call_id": "test_066_billing_inquiry"
+    },
+    {
+      "test_id": 67,
+      "scenario": {
+        "type": "technical_support",
+        "difficulty": "easy",
+        "issue": "connection_slow"
+      },
+      "customer_data": {
+        "phone_number": "53693079809",
+        "name": "Mehmet",
+        "surname": "Şahin",
+        "tc_last_digits": "32",
+        "sim_pin": "5617",
+        "payment_status": "Odendi",
+        "balance": 30.67906391193339,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "İnternetim yavaş",
+        "Hız testi yapabilir misiniz?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.239776611328125e-05,
+      "tool_calls": 1,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_067_technical_support"
+    },
+    {
+      "test_id": 68,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "easy",
+        "customer_state": "normal"
+      },
+      "customer_data": {
+        "phone_number": "53673329807",
+        "name": "Mehmet",
+        "surname": "Kaya",
+        "tc_last_digits": "89",
+        "sim_pin": "9696",
+        "payment_status": "Odendi",
+        "balance": 75.75028673169226,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Paketimi değiştirmek istiyorum",
+        "Daha uygun fiyatlı bir paket var mı?",
+        "Evet, MegaPaket 100'ü istiyorum",
+        "Hayır, başka bir şey yok"
+      ],
+      "success": true,
+      "duration": 1.430511474609375e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_068_package_change"
+    },
+    {
+      "test_id": 69,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "easy",
+        "customer_state": "normal"
+      },
+      "customer_data": {
+        "phone_number": "53784465221",
+        "name": "Ahmet",
+        "surname": "Çelik",
+        "tc_last_digits": "37",
+        "sim_pin": "9680",
+        "payment_status": "Odendi",
+        "balance": 7.297348604823561,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Paketimi değiştirmek istiyorum",
+        "Daha uygun fiyatlı bir paket var mı?",
+        "Evet, MegaPaket 100'ü istiyorum",
+        "Hayır, başka bir şey yok"
+      ],
+      "success": true,
+      "duration": 1.430511474609375e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_069_package_change"
+    },
+    {
+      "test_id": 70,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "expert",
+        "customer_state": "multiple_issues"
+      },
+      "customer_data": {
+        "phone_number": "53454817670",
+        "name": "Ayşe",
+        "surname": "Yıldız",
+        "tc_last_digits": "55",
+        "sim_pin": "1559",
+        "payment_status": "Gecikmis",
+        "balance": -150.0907142425746,
+        "contract_end_date": "2026-03-15"
+      },
+      "user_inputs": [
+        "Paket değişikliği yapmak istiyorum",
+        "Önce fatura durumumu öğrenmek istiyorum",
+        "Borç mu var?",
+        "Nasıl ödeyebilirim?",
+        "Şimdi paket değişikliği yapabilir miyim?",
+        "Hangi paketler uygun?",
+        "Bu paket iyi görünüyor",
+        "Hayır, başka bir şey yok"
+      ],
+      "success": true,
+      "duration": 1.430511474609375e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 3,
+      "call_id": "test_070_package_change"
+    },
+    {
+      "test_id": 71,
+      "scenario": {
+        "type": "technical_support",
+        "difficulty": "medium",
+        "issue": "no_internet"
+      },
+      "customer_data": {
+        "phone_number": "53480607568",
+        "name": "Ali",
+        "surname": "Şahin",
+        "tc_last_digits": "54",
+        "sim_pin": "4181",
+        "payment_status": "Odendi",
+        "balance": 78.01057228897055,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "İnternet bağlantım yok",
+        "Modem çalışıyor mu?",
+        "Yeniden başlatayım mı?",
+        "Hala çalışmıyor",
+        "Teknisyen gönderin"
+      ],
+      "success": true,
+      "duration": 1.9073486328125e-06,
+      "tool_calls": 1,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_071_technical_support"
+    },
+    {
+      "test_id": 72,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "easy",
+        "customer_state": "normal"
+      },
+      "customer_data": {
+        "phone_number": "53784242468",
+        "name": "Mehmet",
+        "surname": "Yılmaz",
+        "tc_last_digits": "16",
+        "sim_pin": "3442",
+        "payment_status": "Odendi",
+        "balance": 23.20558935202045,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Paketimi değiştirmek istiyorum",
+        "Daha uygun fiyatlı bir paket var mı?",
+        "Evet, MegaPaket 100'ü istiyorum",
+        "Hayır, başka bir şey yok"
+      ],
+      "success": true,
+      "duration": 9.5367431640625e-07,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_072_package_change"
+    },
+    {
+      "test_id": 73,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "easy",
+        "customer_state": "normal"
+      },
+      "customer_data": {
+        "phone_number": "53621758841",
+        "name": "Ahmet",
+        "surname": "Çelik",
+        "tc_last_digits": "82",
+        "sim_pin": "9959",
+        "payment_status": "Odendi",
+        "balance": 0.44704894171060383,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Paketimi değiştirmek istiyorum",
+        "Daha uygun fiyatlı bir paket var mı?",
+        "Evet, MegaPaket 100'ü istiyorum",
+        "Hayır, başka bir şey yok"
+      ],
+      "success": true,
+      "duration": 9.5367431640625e-07,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_073_package_change"
+    },
+    {
+      "test_id": 74,
+      "scenario": {
+        "type": "technical_support",
+        "difficulty": "expert",
+        "issue": "complex_network"
+      },
+      "customer_data": {
+        "phone_number": "53327217399",
+        "name": "Ali",
+        "surname": "Şahin",
+        "tc_last_digits": "32",
+        "sim_pin": "8675",
+        "payment_status": "Odendi",
+        "balance": 87.02867549475299,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Karmaşık bir ağ sorunum var",
+        "Birden fazla cihaz bağlı",
+        "Bazı cihazlar çalışıyor bazıları çalışmıyor",
+        "Firewall ayarları değişti mi?",
+        "IP adresim değişti mi?",
+        "DNS ayarlarını kontrol edin",
+        "Teknisyen gönderin"
+      ],
+      "success": true,
+      "duration": 2.1457672119140625e-06,
+      "tool_calls": 1,
+      "context_switches": 1,
+      "error_count": 0,
+      "satisfaction": 3,
+      "call_id": "test_074_technical_support"
+    },
+    {
+      "test_id": 75,
+      "scenario": {
+        "type": "technical_support",
+        "difficulty": "medium",
+        "issue": "no_internet"
+      },
+      "customer_data": {
+        "phone_number": "53898230969",
+        "name": "Mehmet",
+        "surname": "Şahin",
+        "tc_last_digits": "41",
+        "sim_pin": "4580",
+        "payment_status": "Odendi",
+        "balance": 92.50353233305279,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "İnternet bağlantım yok",
+        "Modem çalışıyor mu?",
+        "Yeniden başlatayım mı?",
+        "Hala çalışmıyor",
+        "Teknisyen gönderin"
+      ],
+      "success": true,
+      "duration": 1.1920928955078125e-06,
+      "tool_calls": 1,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_075_technical_support"
+    },
+    {
+      "test_id": 76,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "hard",
+        "customer_state": "contract_locked"
+      },
+      "customer_data": {
+        "phone_number": "53079123254",
+        "name": "Ayşe",
+        "surname": "Şahin",
+        "tc_last_digits": "89",
+        "sim_pin": "3040",
+        "payment_status": "Odendi",
+        "balance": 48.54396193781278,
+        "contract_end_date": "2026-06-30"
+      },
+      "user_inputs": [
+        "Paketimi değiştirmek istiyorum",
+        "Hangi paketler var?",
+        "Bu paket bana uygun değil",
+        "Başka seçenek yok mu?",
+        "Sözleşmem ne zaman bitiyor?",
+        "Tamam, bekleyeceğim"
+      ],
+      "success": true,
+      "duration": 1.430511474609375e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 4,
+      "call_id": "test_076_package_change"
+    },
+    {
+      "test_id": 77,
+      "scenario": {
+        "type": "billing_inquiry",
+        "difficulty": "expert",
+        "customer_state": "fraud_suspicion"
+      },
+      "customer_data": {
+        "phone_number": "53300331475",
+        "name": "Fatma",
+        "surname": "Çelik",
+        "tc_last_digits": "83",
+        "sim_pin": "7266",
+        "payment_status": "Donduruldu",
+        "balance": -414.7284137862233,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura durumumu öğrenmek istiyorum",
+        "Bu fatura çok yüksek",
+        "Ben bu hizmetleri kullanmadım",
+        "Dolandırılıyorum",
+        "Avukatımla konuşacağım",
+        "İtiraz sürecini başlatın",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 2.86102294921875e-06,
+      "tool_calls": 2,
+      "context_switches": 0,
+      "error_count": 1,
+      "satisfaction": 4,
+      "call_id": "test_077_billing_inquiry"
+    },
+    {
+      "test_id": 78,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "easy",
+        "customer_state": "normal"
+      },
+      "customer_data": {
+        "phone_number": "53172516158",
+        "name": "Ayşe",
+        "surname": "Kaya",
+        "tc_last_digits": "99",
+        "sim_pin": "6051",
+        "payment_status": "Odendi",
+        "balance": 44.52390972681698,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Paketimi değiştirmek istiyorum",
+        "Daha uygun fiyatlı bir paket var mı?",
+        "Evet, MegaPaket 100'ü istiyorum",
+        "Hayır, başka bir şey yok"
+      ],
+      "success": true,
+      "duration": 1.1920928955078125e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_078_package_change"
+    },
+    {
+      "test_id": 79,
+      "scenario": {
+        "type": "technical_support",
+        "difficulty": "medium",
+        "issue": "no_internet"
+      },
+      "customer_data": {
+        "phone_number": "53262840084",
+        "name": "Ayşe",
+        "surname": "Yılmaz",
+        "tc_last_digits": "66",
+        "sim_pin": "9979",
+        "payment_status": "Odendi",
+        "balance": 77.07371938499949,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "İnternet bağlantım yok",
+        "Modem çalışıyor mu?",
+        "Yeniden başlatayım mı?",
+        "Hala çalışmıyor",
+        "Teknisyen gönderin"
+      ],
+      "success": true,
+      "duration": 1.6689300537109375e-06,
+      "tool_calls": 1,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 4,
+      "call_id": "test_079_technical_support"
+    },
+    {
+      "test_id": 80,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "expert",
+        "customer_state": "multiple_issues"
+      },
+      "customer_data": {
+        "phone_number": "53738418885",
+        "name": "Ayşe",
+        "surname": "Şahin",
+        "tc_last_digits": "35",
+        "sim_pin": "8095",
+        "payment_status": "Gecikmis",
+        "balance": -184.4317456908734,
+        "contract_end_date": "2026-03-15"
+      },
+      "user_inputs": [
+        "Paket değişikliği yapmak istiyorum",
+        "Önce fatura durumumu öğrenmek istiyorum",
+        "Borç mu var?",
+        "Nasıl ödeyebilirim?",
+        "Şimdi paket değişikliği yapabilir miyim?",
+        "Hangi paketler uygun?",
+        "Bu paket iyi görünüyor",
+        "Hayır, başka bir şey yok"
+      ],
+      "success": true,
+      "duration": 9.5367431640625e-07,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 3,
+      "call_id": "test_080_package_change"
+    },
+    {
+      "test_id": 81,
+      "scenario": {
+        "type": "context_switch",
+        "difficulty": "expert",
+        "switch_type": "multiple_switches"
+      },
+      "customer_data": {
+        "phone_number": "53240665705",
+        "name": "Ayşe",
+        "surname": "Şahin",
+        "tc_last_digits": "15",
+        "sim_pin": "3221",
+        "payment_status": "Odendi",
+        "balance": 48.753885952255146,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "İnternet sorunum var",
+        "Modem çalışmıyor",
+        "Aslında fatura da ödemek istiyorum",
+        "Ne kadar borç var?",
+        "Şimdi paket değişikliği de yapabilir miyim?",
+        "Hangi paketler var?",
+        "Teknisyen de gönderin",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 6.9141387939453125e-06,
+      "tool_calls": 3,
+      "context_switches": 2,
+      "error_count": 1,
+      "satisfaction": 4,
+      "call_id": "test_081_context_switch"
+    },
+    {
+      "test_id": 82,
+      "scenario": {
+        "type": "billing_inquiry",
+        "difficulty": "expert",
+        "customer_state": "fraud_suspicion"
+      },
+      "customer_data": {
+        "phone_number": "53797671055",
+        "name": "Zeynep",
+        "surname": "Şahin",
+        "tc_last_digits": "47",
+        "sim_pin": "6204",
+        "payment_status": "Donduruldu",
+        "balance": -252.98837868345674,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura durumumu öğrenmek istiyorum",
+        "Bu fatura çok yüksek",
+        "Ben bu hizmetleri kullanmadım",
+        "Dolandırılıyorum",
+        "Avukatımla konuşacağım",
+        "İtiraz sürecini başlatın",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 3.5762786865234375e-06,
+      "tool_calls": 2,
+      "context_switches": 0,
+      "error_count": 1,
+      "satisfaction": 4,
+      "call_id": "test_082_billing_inquiry"
+    },
+    {
+      "test_id": 83,
+      "scenario": {
+        "type": "billing_inquiry",
+        "difficulty": "expert",
+        "customer_state": "fraud_suspicion"
+      },
+      "customer_data": {
+        "phone_number": "53601153884",
+        "name": "Zeynep",
+        "surname": "Yıldız",
+        "tc_last_digits": "85",
+        "sim_pin": "3109",
+        "payment_status": "Donduruldu",
+        "balance": -280.1974940165869,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura durumumu öğrenmek istiyorum",
+        "Bu fatura çok yüksek",
+        "Ben bu hizmetleri kullanmadım",
+        "Dolandırılıyorum",
+        "Avukatımla konuşacağım",
+        "İtiraz sürecini başlatın",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 2.86102294921875e-06,
+      "tool_calls": 2,
+      "context_switches": 0,
+      "error_count": 1,
+      "satisfaction": 2,
+      "call_id": "test_083_billing_inquiry"
+    },
+    {
+      "test_id": 84,
+      "scenario": {
+        "type": "billing_inquiry",
+        "difficulty": "easy",
+        "customer_state": "paid"
+      },
+      "customer_data": {
+        "phone_number": "53611385574",
+        "name": "Ayşe",
+        "surname": "Şahin",
+        "tc_last_digits": "63",
+        "sim_pin": "1438",
+        "payment_status": "Odendi",
+        "balance": 30.77358724881234,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura bilgilerimi öğrenmek istiyorum",
+        "Son faturam ne kadar?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.430511474609375e-06,
+      "tool_calls": 2,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_084_billing_inquiry"
+    },
+    {
+      "test_id": 85,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "expert",
+        "customer_state": "multiple_issues"
+      },
+      "customer_data": {
+        "phone_number": "53841229992",
+        "name": "Ali",
+        "surname": "Kaya",
+        "tc_last_digits": "27",
+        "sim_pin": "3871",
+        "payment_status": "Gecikmis",
+        "balance": -155.3017433341916,
+        "contract_end_date": "2026-03-15"
+      },
+      "user_inputs": [
+        "Paket değişikliği yapmak istiyorum",
+        "Önce fatura durumumu öğrenmek istiyorum",
+        "Borç mu var?",
+        "Nasıl ödeyebilirim?",
+        "Şimdi paket değişikliği yapabilir miyim?",
+        "Hangi paketler uygun?",
+        "Bu paket iyi görünüyor",
+        "Hayır, başka bir şey yok"
+      ],
+      "success": true,
+      "duration": 1.1920928955078125e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 2,
+      "call_id": "test_085_package_change"
+    },
+    {
+      "test_id": 86,
+      "scenario": {
+        "type": "billing_inquiry",
+        "difficulty": "medium",
+        "customer_state": "overdue"
+      },
+      "customer_data": {
+        "phone_number": "53687094294",
+        "name": "Ahmet",
+        "surname": "Yıldız",
+        "tc_last_digits": "54",
+        "sim_pin": "1301",
+        "payment_status": "Gecikmis",
+        "balance": -114.90849800641473,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura durumumu kontrol etmek istiyorum",
+        "Borç var mı?",
+        "Ne kadar borç var?",
+        "Nasıl ödeyebilirim?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.6689300537109375e-06,
+      "tool_calls": 2,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 4,
+      "call_id": "test_086_billing_inquiry"
+    },
+    {
+      "test_id": 87,
+      "scenario": {
+        "type": "billing_inquiry",
+        "difficulty": "hard",
+        "customer_state": "disputed"
+      },
+      "customer_data": {
+        "phone_number": "53209494741",
+        "name": "Ayşe",
+        "surname": "Yılmaz",
+        "tc_last_digits": "83",
+        "sim_pin": "8631",
+        "payment_status": "Itiraz",
+        "balance": -294.7828835430492,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura bilgilerimi görmek istiyorum",
+        "Bu fatura yanlış",
+        "Ben bu kadar kullanmadım",
+        "İtiraz etmek istiyorum",
+        "Nasıl yapabilirim?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.430511474609375e-06,
+      "tool_calls": 2,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 4,
+      "call_id": "test_087_billing_inquiry"
+    },
+    {
+      "test_id": 88,
+      "scenario": {
+        "type": "billing_inquiry",
+        "difficulty": "hard",
+        "customer_state": "disputed"
+      },
+      "customer_data": {
+        "phone_number": "53432146181",
+        "name": "Zeynep",
+        "surname": "Kaya",
+        "tc_last_digits": "99",
+        "sim_pin": "7886",
+        "payment_status": "Itiraz",
+        "balance": -148.10346677586116,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura bilgilerimi görmek istiyorum",
+        "Bu fatura yanlış",
+        "Ben bu kadar kullanmadım",
+        "İtiraz etmek istiyorum",
+        "Nasıl yapabilirim?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.1920928955078125e-06,
+      "tool_calls": 2,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 3,
+      "call_id": "test_088_billing_inquiry"
+    },
+    {
+      "test_id": 89,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "expert",
+        "customer_state": "multiple_issues"
+      },
+      "customer_data": {
+        "phone_number": "53857710106",
+        "name": "Ayşe",
+        "surname": "Şahin",
+        "tc_last_digits": "55",
+        "sim_pin": "7480",
+        "payment_status": "Gecikmis",
+        "balance": -133.16124585204807,
+        "contract_end_date": "2026-03-15"
+      },
+      "user_inputs": [
+        "Paket değişikliği yapmak istiyorum",
+        "Önce fatura durumumu öğrenmek istiyorum",
+        "Borç mu var?",
+        "Nasıl ödeyebilirim?",
+        "Şimdi paket değişikliği yapabilir miyim?",
+        "Hangi paketler uygun?",
+        "Bu paket iyi görünüyor",
+        "Hayır, başka bir şey yok"
+      ],
+      "success": true,
+      "duration": 1.1920928955078125e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 2,
+      "call_id": "test_089_package_change"
+    },
+    {
+      "test_id": 90,
+      "scenario": {
+        "type": "context_switch",
+        "difficulty": "hard",
+        "switch_type": "billing_to_technical"
+      },
+      "customer_data": {
+        "phone_number": "53405710416",
+        "name": "Fatma",
+        "surname": "Şahin",
+        "tc_last_digits": "65",
+        "sim_pin": "3250",
+        "payment_status": "Odendi",
+        "balance": 63.41163815604776,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura bilgilerimi öğrenmek istiyorum",
+        "Bu fatura yanlış",
+        "Aslında paket değişikliği de yapmak istiyorum",
+        "Hangi paketler uygun?",
+        "Fiyatları görebilir miyim?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 2.1457672119140625e-06,
+      "tool_calls": 3,
+      "context_switches": 1,
+      "error_count": 0,
+      "satisfaction": 3,
+      "call_id": "test_090_context_switch"
+    },
+    {
+      "test_id": 91,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "easy",
+        "customer_state": "normal"
+      },
+      "customer_data": {
+        "phone_number": "53793245140",
+        "name": "Ali",
+        "surname": "Kaya",
+        "tc_last_digits": "99",
+        "sim_pin": "9854",
+        "payment_status": "Odendi",
+        "balance": 50.742329004975204,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Paketimi değiştirmek istiyorum",
+        "Daha uygun fiyatlı bir paket var mı?",
+        "Evet, MegaPaket 100'ü istiyorum",
+        "Hayır, başka bir şey yok"
+      ],
+      "success": true,
+      "duration": 1.6689300537109375e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_091_package_change"
+    },
+    {
+      "test_id": 92,
+      "scenario": {
+        "type": "billing_inquiry",
+        "difficulty": "hard",
+        "customer_state": "disputed"
+      },
+      "customer_data": {
+        "phone_number": "53274190572",
+        "name": "Ahmet",
+        "surname": "Yıldız",
+        "tc_last_digits": "64",
+        "sim_pin": "7333",
+        "payment_status": "Itiraz",
+        "balance": -192.79110426277006,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura bilgilerimi görmek istiyorum",
+        "Bu fatura yanlış",
+        "Ben bu kadar kullanmadım",
+        "İtiraz etmek istiyorum",
+        "Nasıl yapabilirim?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.1920928955078125e-06,
+      "tool_calls": 2,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 3,
+      "call_id": "test_092_billing_inquiry"
+    },
+    {
+      "test_id": 93,
+      "scenario": {
+        "type": "technical_support",
+        "difficulty": "hard",
+        "issue": "router_problem"
+      },
+      "customer_data": {
+        "phone_number": "53127779000",
+        "name": "Ahmet",
+        "surname": "Demir",
+        "tc_last_digits": "63",
+        "sim_pin": "8559",
+        "payment_status": "Odendi",
+        "balance": 31.903642808004385,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "İnternet sorunum var",
+        "Modem ışıkları yanıp sönüyor",
+        "Kabloları kontrol ettim",
+        "Başka bir sorun olabilir mi?",
+        "Teknisyen ne zaman gelebilir?",
+        "Acil mi?"
+      ],
+      "success": true,
+      "duration": 1.9073486328125e-06,
+      "tool_calls": 1,
+      "context_switches": 1,
+      "error_count": 0,
+      "satisfaction": 4,
+      "call_id": "test_093_technical_support"
+    },
+    {
+      "test_id": 94,
+      "scenario": {
+        "type": "billing_inquiry",
+        "difficulty": "easy",
+        "customer_state": "paid"
+      },
+      "customer_data": {
+        "phone_number": "53388912925",
+        "name": "Ayşe",
+        "surname": "Demir",
+        "tc_last_digits": "65",
+        "sim_pin": "7079",
+        "payment_status": "Odendi",
+        "balance": 5.438992999401821,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "Fatura bilgilerimi öğrenmek istiyorum",
+        "Son faturam ne kadar?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 1.1920928955078125e-06,
+      "tool_calls": 2,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_094_billing_inquiry"
+    },
+    {
+      "test_id": 95,
+      "scenario": {
+        "type": "technical_support",
+        "difficulty": "easy",
+        "issue": "connection_slow"
+      },
+      "customer_data": {
+        "phone_number": "53000885859",
+        "name": "Ali",
+        "surname": "Çelik",
+        "tc_last_digits": "22",
+        "sim_pin": "1491",
+        "payment_status": "Odendi",
+        "balance": 95.23393633448974,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "İnternetim yavaş",
+        "Hız testi yapabilir misiniz?",
+        "Teşekkürler"
+      ],
+      "success": true,
+      "duration": 9.5367431640625e-07,
+      "tool_calls": 1,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_095_technical_support"
+    },
+    {
+      "test_id": 96,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "hard",
+        "customer_state": "contract_locked"
+      },
+      "customer_data": {
+        "phone_number": "53064241756",
+        "name": "Ahmet",
+        "surname": "Yıldız",
+        "tc_last_digits": "63",
+        "sim_pin": "9716",
+        "payment_status": "Odendi",
+        "balance": 44.24397494351439,
+        "contract_end_date": "2026-06-30"
+      },
+      "user_inputs": [
+        "Paketimi değiştirmek istiyorum",
+        "Hangi paketler var?",
+        "Bu paket bana uygun değil",
+        "Başka seçenek yok mu?",
+        "Sözleşmem ne zaman bitiyor?",
+        "Tamam, bekleyeceğim"
+      ],
+      "success": true,
+      "duration": 9.5367431640625e-07,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 4,
+      "call_id": "test_096_package_change"
+    },
+    {
+      "test_id": 97,
+      "scenario": {
+        "type": "technical_support",
+        "difficulty": "hard",
+        "issue": "router_problem"
+      },
+      "customer_data": {
+        "phone_number": "53950011481",
+        "name": "Ayşe",
+        "surname": "Yılmaz",
+        "tc_last_digits": "12",
+        "sim_pin": "7772",
+        "payment_status": "Odendi",
+        "balance": 12.314262856976576,
+        "contract_end_date": "2025-12-31"
+      },
+      "user_inputs": [
+        "İnternet sorunum var",
+        "Modem ışıkları yanıp sönüyor",
+        "Kabloları kontrol ettim",
+        "Başka bir sorun olabilir mi?",
+        "Teknisyen ne zaman gelebilir?",
+        "Acil mi?"
+      ],
+      "success": true,
+      "duration": 1.1920928955078125e-06,
+      "tool_calls": 1,
+      "context_switches": 1,
+      "error_count": 0,
+      "satisfaction": 5,
+      "call_id": "test_097_technical_support"
+    },
+    {
+      "test_id": 98,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "expert",
+        "customer_state": "multiple_issues"
+      },
+      "customer_data": {
+        "phone_number": "53305305538",
+        "name": "Ali",
+        "surname": "Şahin",
+        "tc_last_digits": "42",
+        "sim_pin": "9421",
+        "payment_status": "Gecikmis",
+        "balance": -87.34788599957177,
+        "contract_end_date": "2026-03-15"
+      },
+      "user_inputs": [
+        "Paket değişikliği yapmak istiyorum",
+        "Önce fatura durumumu öğrenmek istiyorum",
+        "Borç mu var?",
+        "Nasıl ödeyebilirim?",
+        "Şimdi paket değişikliği yapabilir miyim?",
+        "Hangi paketler uygun?",
+        "Bu paket iyi görünüyor",
+        "Hayır, başka bir şey yok"
+      ],
+      "success": true,
+      "duration": 1.430511474609375e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 4,
+      "call_id": "test_098_package_change"
+    },
+    {
+      "test_id": 99,
+      "scenario": {
+        "type": "package_change",
+        "difficulty": "hard",
+        "customer_state": "contract_locked"
+      },
+      "customer_data": {
+        "phone_number": "53369871378",
+        "name": "Fatma",
+        "surname": "Şahin",
+        "tc_last_digits": "48",
+        "sim_pin": "8892",
+        "payment_status": "Odendi",
+        "balance": 13.25017449656713,
+        "contract_end_date": "2026-06-30"
+      },
+      "user_inputs": [
+        "Paketimi değiştirmek istiyorum",
+        "Hangi paketler var?",
+        "Bu paket bana uygun değil",
+        "Başka seçenek yok mu?",
+        "Sözleşmem ne zaman bitiyor?",
+        "Tamam, bekleyeceğim"
+      ],
+      "success": true,
+      "duration": 1.430511474609375e-06,
+      "tool_calls": 3,
+      "context_switches": 0,
+      "error_count": 0,
+      "satisfaction": 3,
+      "call_id": "test_099_package_change"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project specific
+*.mp3
+*.wav
+logs/
+temp/
+*.log
+
+# Model files (too large for git)
+models/**/*.bin
+models/**/*.safetensors
+models/**/*.onnx
+
+# Data files with sensitive information
+data/gecmis_gorusmeler.json
+
+# Audio files
+yanit.mp3
+yanit.wav
+scripts/ding.mp3
+scripts/ding.wav
+
+# Temporary files
+temp_audio_*
+

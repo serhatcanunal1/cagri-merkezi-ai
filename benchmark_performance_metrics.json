@@ -1,0 +1,74 @@
+{
+  "report_generated": "2025-08-15T02:33:50.666097",
+  "test_summary": {
+    "total_test_calls": 100,
+    "minimum_required": 100,
+    "requirement_met": true
+  },
+  "system_performance": {
+    "total_calls": 100,
+    "successful_calls": 97,
+    "failed_calls": 3,
+    "avg_call_duration": 2.318e-05,
+    "avg_customer_satisfaction": 4.08,
+    "avg_success_rate": 0.97,
+    "total_errors": 12,
+    "system_uptime": 0.010701,
+    "peak_concurrent_calls": 0,
+    "current_concurrent_calls": 0
+  },
+  "scenario_performance": {
+    "test_billing_inquiry": {
+      "total_calls": 30,
+      "successful_calls": 30,
+      "success_rate": 1.0,
+      "avg_duration": 2.5166666666666667e-05,
+      "avg_satisfaction": 4.066666666666666,
+      "avg_tool_calls": 1,
+      "avg_errors": 0.2
+    },
+    "test_package_change": {
+      "total_calls": 40,
+      "successful_calls": 37,
+      "success_rate": 0.925,
+      "avg_duration": 2.23e-05,
+      "avg_satisfaction": 4.075,
+      "avg_tool_calls": 1,
+      "avg_errors": 0.075
+    },
+    "test_context_switch": {
+      "total_calls": 10,
+      "successful_calls": 10,
+      "success_rate": 1.0,
+      "avg_duration": 2.62e-05,
+      "avg_satisfaction": 4.1,
+      "avg_tool_calls": 1,
+      "avg_errors": 0.3
+    },
+    "test_technical_support": {
+      "total_calls": 20,
+      "successful_calls": 20,
+      "success_rate": 1.0,
+      "avg_duration": 2.045e-05,
+      "avg_satisfaction": 4.1,
+      "avg_tool_calls": 1,
+      "avg_errors": 0
+    }
+  },
+  "kpi_analysis": {
+    "success_rate": 0.97,
+    "customer_satisfaction": 4.08,
+    "avg_call_duration": 2.318e-05,
+    "error_rate": 0.12,
+    "system_reliability": 97.0
+  },
+  "scaling_analysis": {
+    "current_capacity": 0,
+    "peak_capacity": 0,
+    "estimated_100k_calls_daily": {
+      "required_servers": 1198351,
+      "estimated_cost_per_day": "Hesaplanacak",
+      "estimated_response_time": 2.318e-05
+    }
+  }
+}
