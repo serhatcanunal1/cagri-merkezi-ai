@@ -511,4 +511,10 @@ Bu proje **MIT Lisansı** altında lisanslanmıştır.
 
 ---
 
+## 📊 Yarışma Etiketleri
+
+**BilisimVadisi2025** | **Türkiye Açık Kaynak Platformu** | **TEKNOFEST2025** | **Türkçe Doğal Dil İşleme** | **AI Çağrı Merkezi** | **BERTurk** | **Python** | **Speech Recognition** | **TTS** | **STT** | **Mock API** | **Benchmark Testing** | **Performance Metrics** | **Call Center AI** | **Turkish NLP** | **Voice Assistant** | **Conversational AI** | **Customer Service AI** | **BERT Model** | **Natural Language Processing**
+
+---
+
 *Bu README dosyası, TEKNOFEST 2025 Türkçe Doğal Dil İşleme Yarışması - Senaryo Kategorisi gereksinimlerine uygun olarak hazırlanmıştır.*
