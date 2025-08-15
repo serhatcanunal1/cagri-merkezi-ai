@@ -542,7 +542,6 @@ python scripts/performance_metrics.py
 ## 📞 İletişim ve Destek
 
 ### **Geliştirici İletişimi**
-- **E-posta**: trivox.team@example.com
 - **GitHub**: https://github.com/serhatcanunal1/cagri-merkezi-ai
 - **Takım Kaptanı**: Serhatcan Ünal (@serhatcanunal1)
 - **Dokümantasyon**: `SYSTEM_ARCHITECTURE.md`
@@ -584,6 +583,34 @@ Bu proje **MIT Lisansı** altında lisanslanmıştır. Detaylar için `LICENSE` 
 **Yenilikçilik Seviyesi**: **Yüksek**  
 **Teknik Kalite**: **Mükemmel**  
 **AI Model Kalitesi**: **Üst Düzey (F1: 0.91)**
+
+---
+
+## 🚀 Hızlı Başlangıç
+
+### **Kurulum**
+```bash
+# Repository'yi klonlayın
+git clone https://github.com/serhatcanunal1/cagri-merkezi-ai.git
+cd cagri-merkezi-ai
+
+# Bağımlılıkları yükleyin
+pip install -r requirements.txt
+
+# Sistemi çalıştırın
+python run_call_center.py
+```
+
+### **Demo**
+- **Sesli Etkileşim**: Mikrofon ile konuşarak test edin
+- **Metin Girişi**: UI üzerinden metin yazarak test edin
+- **Benchmark Testleri**: `python scripts/benchmark_tester.py`
+
+---
+
+## 📊 Yarışma Etiketleri
+
+**BilisimVadisi2025** | **Türkiye Açık Kaynak Platformu** | **TEKNOFEST2025** | **Türkçe Doğal Dil İşleme** | **AI Çağrı Merkezi** | **BERTurk**
 
 ---
 
