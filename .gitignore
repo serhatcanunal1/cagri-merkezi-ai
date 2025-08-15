@@ -55,6 +55,12 @@ temp/
 models/**/*.bin
 models/**/*.safetensors
 models/**/*.onnx
+models/**/*.pt
+models/**/*.pth
+models/berturk_finetuned/checkpoint-*/
+models/berturk_finetuned/optimizer.pt
+models/berturk_finetuned/scheduler.pt
+models/berturk_finetuned/rng_state.pth
 
 # Data files with sensitive information
 data/gecmis_gorusmeler.json
